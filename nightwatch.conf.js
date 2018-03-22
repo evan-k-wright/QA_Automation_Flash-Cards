@@ -1,6 +1,7 @@
 const properties = require('./nightwatch.props')
 module.exports = {
-    "src_folders" : "testing",    
+    "src_folders" : "testing",
+    "custon_commands_path": "customCommands",   
   
     "selenium" : {
       "start_process" : true,

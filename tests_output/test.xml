@@ -5,18 +5,18 @@
 
   <testsuite name="test"
     errors="1" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="0.008000" timestamp="Wed, 21 Mar 2018 22:43:19 GMT">
+    tests="1" time="0.006000" timestamp="Thu, 22 Mar 2018 21:55:37 GMT">
   
-    <testcase name="Page Load" classname="test" time="0.008000" assertions="0">
+    <testcase name="Logging In" classname="test" time="0.006000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Test / Page Load]:
+        Error while running [Test / Logging In]:
 
-  ReferenceError: assert is not defined
-    at Object.Page Load (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:11:13)
+  TypeError: browser.assert.containsText(...).setValue(...).setValue(...).clickByText is not a function
+    at Object.Logging In (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:29:14)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
