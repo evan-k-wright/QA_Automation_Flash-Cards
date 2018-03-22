@@ -1,6 +1,7 @@
 module.exports = {
-//Main Page
-    title1: 'label[data-bind="text: strings.title"]',
 //Sign Up
-    signUp: 'label[data-bind="text: strings.signUpTab"]'
+    signUp: 'label[data-bind="text: strings.signUpTab"]',
+    email: 'input[type="email"]',
+    password: 'input[placeholder"Password"]',
+    confPass: 'input[placeholder="Confirm Password"]',
 }
