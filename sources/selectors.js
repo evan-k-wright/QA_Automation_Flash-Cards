@@ -12,4 +12,7 @@ module.exports = {
     loggingEmail: 'input[placeholder="Email"]',
     logginPassword: 'input[placeholder="Password"]',
     loginButton: 'button[class="primary"]',
+//Home Page
+    decks: 'label[data-bind="text: strings.decks"]',
+    
 }

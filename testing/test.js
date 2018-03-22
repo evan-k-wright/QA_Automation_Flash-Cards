@@ -7,7 +7,7 @@ module.exports = {
     after: browser => {
         browser
     },
-   /*'Creating An Account': browser => {
+   'Creating An Account': browser => {
         browser
             .waitForElementPresent('body', 3000)
             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
@@ -20,13 +20,17 @@ module.exports = {
             .click('button[class="primary"]')
             .waitForElementPresent('body', 3000)
             .click('button[class="primary"]')
-   },*/
+            .pause(3000)
+   },
     'Logging In': browser => {
         browser
             .assert.containsText(selectors.loggin, 'LOGIN')
             .setValue(selectors.loggingEmail, 'testing123@gmail.com')
             .setValue(selectors.logginPassword, 'T3st234')
             .click(selectors.loginButton)
+            .pause(2000)
+            .click(selectors.decks)
+            
 
     }
 }
