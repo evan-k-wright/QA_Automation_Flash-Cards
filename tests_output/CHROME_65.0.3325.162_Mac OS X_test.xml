@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="test"
+    errors="0" failures="1" hostname="" id="" package="test" skipped="0"
+    tests="1" time="2.721" timestamp="Wed, 21 Mar 2018 22:45:39 GMT">
+  
+    <testcase name="Page Load" classname="test" time="2.721" assertions="2">
+
+      <failure message="Testing if value of &lt;label[data-bind=&#34;text: strings.title&#34;]&gt; equals: &#34;Login&#34;. Element or attribute could not be located.">    at Object.Page Load (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:11:21)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
