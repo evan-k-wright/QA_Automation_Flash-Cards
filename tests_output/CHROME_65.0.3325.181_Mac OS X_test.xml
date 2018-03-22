@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="test"
+    errors="0" failures="1" hostname="" id="" package="test" skipped="0"
+    tests="1" time="3.751" timestamp="Thu, 22 Mar 2018 21:02:26 GMT">
+  
+    <testcase name="Creating An Account" classname="test" time="3.751" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Expected element &lt;label[data-bind=&#34;text: strings.decks&#34;]&gt; text to equal: &#34;Decks&#34; - element was not found">    at Object.Creating An Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:22:21)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
