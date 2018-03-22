@@ -26,7 +26,7 @@ module.exports = {
             .assert.containsText(selectors.loggin, 'LOGIN')
             .setValue(selectors.loggingEmail, 'testing123@gmail.com')
             .setValue(selectors.logginPassword, 'T3st234')
-            .pause(3000)
+            .click(selectors.loginButton)
 
     }
 }

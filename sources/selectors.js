@@ -11,4 +11,5 @@ module.exports = {
     loggin: 'label[data-bind="text: strings.loginTab"]',
     loggingEmail: 'input[placeholder="Email"]',
     logginPassword: 'input[placeholder="Password"]',
+    loginButton: 'button[class="primary"]',
 }
