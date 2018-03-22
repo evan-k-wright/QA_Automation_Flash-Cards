@@ -18,7 +18,8 @@ module.exports = {
             .click('button[class="primary"]')
             .waitForElementPresent('body', 3000)
             .click('button[class="primary"]')
-            .expect.element('label[data-bind="text: strings.decks"]').text.to.equal('Decks')
-
+    },
+    'Logging In': browser => {
+        
     }
 }
