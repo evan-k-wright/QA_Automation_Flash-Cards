@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="1">
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="2" time="10.46" timestamp="Thu, 22 Mar 2018 22:21:15 GMT">
+    tests="1" time="9.386" timestamp="Thu, 22 Mar 2018 22:37:25 GMT">
   
-    <testcase name="Creating An Account" classname="test" time="7.767" assertions="4">
+    <testcase name="Creating An Account" classname="test" time="9.386" assertions="2">
 
     
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Logging In" classname="test" time="2.691" assertions="1">
 
     
     </testcase>

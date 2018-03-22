@@ -12,17 +12,16 @@ module.exports = {
             .waitForElementPresent('body', 3000)
             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
             .click('label[data-bind="text: strings.signUpTab"]')
-            .setValue('input[type="email"]', 'testing123@gmail.com')
-            .setValue('input[placeholder="Password"]', 'T3st234')
-            .setValue('input[placeholder="Confirm Password"]', 'T3st234')
-            .click('button[class="primary"]')
-            .waitForElementPresent('body', 3000)
-            .click('button[class="primary"]')
-            .waitForElementPresent('body', 3000)
-            .click('button[class="primary"]')
-            .pause(3000)
+            .setValue('input[type="email"]', 'testme@gmail.com')
+            .setValue('input[placeholder="Password"]', '098765')
+            .setValue('input[placeholder="Confirm Password"]', '098765')
+            .click(selectors.signupButton)
+            .pause(2000)
+            .click(selectors.termsUseAccept)
+            .pause(2000)
+            .click(selectors.getStarted)
    },
-    'Logging In': browser => {
+    /*'Logging In': browser => {
         browser
             .assert.containsText(selectors.loggin, 'LOGIN')
             .setValue(selectors.loggingEmail, 'testing123@gmail.com')
@@ -30,7 +29,5 @@ module.exports = {
             .click(selectors.loginButton)
             .pause(2000)
             .click(selectors.decks)
-            
-
-    }
+    }*/
 }
