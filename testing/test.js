@@ -1,3 +1,5 @@
+const selectors = require('../sources/selectors')
+
 module.exports = {
     beforeEach: browser => {
         browser.url('https://cards-beta.devclock.com/login')
@@ -5,7 +7,7 @@ module.exports = {
     after: browser => {
         browser.end()
     },
-   'Creating An Account': browser => {
+   /*'Creating An Account': browser => {
         browser
             .waitForElementPresent('body', 3000)
             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
@@ -18,8 +20,13 @@ module.exports = {
             .click('button[class="primary"]')
             .waitForElementPresent('body', 3000)
             .click('button[class="primary"]')
-    },
+   },*/
     'Logging In': browser => {
-        
+        browser
+            .assert.containsText(selectors.loggin, 'LOGIN')
+            .setValue(selectors.loggingEmail, 'testing123@gmail.com')
+            .setValue(selectors.logginPassword, 'T3st234')
+            .pause(3000)
+
     }
 }

@@ -7,6 +7,8 @@ module.exports = {
     signupButton: 'button[class="primary"]',
     termsUseAccept: 'button[class="primary"]',
     getStarted: 'button[class="primary"]',
-//Home Page
-    decks: 'label[data-bind="text: strings.decks"]',
+//Login
+    loggin: 'label[data-bind="text: strings.loginTab"]',
+    loggingEmail: 'input[placeholder="Email"]',
+    logginPassword: 'input[placeholder="Password"]',
 }
