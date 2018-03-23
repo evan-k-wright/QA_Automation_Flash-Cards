@@ -4,9 +4,9 @@ module.exports = {
     email: 'input[type="email"]',
     password: 'input[placeholder"Password"]',
     confPass: 'input[placeholder="Confirm Password"]',
-    signupButton: 'body > div.main > div.content > div > div.tabsContainer > div:nth-child(7) > div > button:nth-child(3)',
-    termsUseAccept: 'button[class="primary"]',
-    getStarted: 'button[@class="primary"]',
+    signupButton: '/html/body/div[2]/div[2]/div/div[2]/div[4]/div/button[3]',
+    termsUseAccept: '/html/body/div[2]/div[2]/div/div[2]/button[1]',
+    getStarted: '',
 //Login
     loggin: 'label[data-bind="text: strings.loginTab"]',
     loggingEmail: 'input[placeholder="Email"]',

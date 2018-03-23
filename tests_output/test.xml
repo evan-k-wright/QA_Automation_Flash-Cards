@@ -5,18 +5,18 @@
 
   <testsuite name="test"
     errors="1" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="0.006000" timestamp="Thu, 22 Mar 2018 21:55:37 GMT">
+    tests="1" time="0.007000" timestamp="Fri, 23 Mar 2018 17:57:43 GMT">
   
-    <testcase name="Logging In" classname="test" time="0.006000" assertions="0">
+    <testcase name="Creating An Account" classname="test" time="0.007000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Test / Logging In]:
+        Error while running [Test / Creating An Account]:
 
-  TypeError: browser.assert.containsText(...).setValue(...).setValue(...).clickByText is not a function
-    at Object.Logging In (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:29:14)
+  TypeError: browser.waitForElementPresent(...).assert.containsText(...).click(...).setValue(...).setValue(...).setValue(...).clickByText is not a function
+    at Object.Creating An Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:18:14)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
