@@ -1,8 +1,8 @@
-const userInfo = require('./userData')
+const userData = require('./userData')
 const selectors = require('./selectors')
 
 module.exports = {
-
+    login: login
 }
 
 const login = (browser, userInfo) => {
