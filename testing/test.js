@@ -1,5 +1,6 @@
 const selectors = require('../sources/selectors')
 const functions = require('../sources/functions')
+const userData = require('../sources/userData')
 
 module.exports = {
     beforeEach: browser => {
@@ -25,12 +26,15 @@ module.exports = {
 //             .click('button[class="primary"]')
 //             .pause(3000)
 //   },
-    'Logging In And Out': browser => {
-        browser
-            .setValue(selectors.loggingEmail, 'testing022@gmail.com')
-            .setValue(selectors.logginPassword, 'test022')
-            .click(selectors.loginButton)
-            .pause(2000)
-            .click(selectors.logoutBtton)
+    // 'Logging In And Out': browser => {
+    //     browser
+    //         .setValue(selectors.loggingEmail, 'testing022@gmail.com')
+    //         .setValue(selectors.logginPassword, 'test022')
+    //         .click(selectors.loginButton)
+    //         .pause(2000)
+    //         .click(selectors.logoutBtton)
+    // },
+    'Adding Deck and Card': browser => {
+            functions.login(browser, userData)
     },
 }
