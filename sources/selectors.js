@@ -4,9 +4,9 @@ module.exports = {
     email: 'input[type="email"]',
     password: 'input[placeholder"Password"]',
     confPass: 'input[placeholder="Confirm Password"]',
-    signupButton: 'button[class="primary"]',
+    signupButton: 'body > div.main > div.content > div > div.tabsContainer > div:nth-child(7) > div > button:nth-child(3)',
     termsUseAccept: 'button[class="primary"]',
-    getStarted: 'button[class="primary"]',
+    getStarted: 'button[@class="primary"]',
 //Login
     loggin: 'label[data-bind="text: strings.loginTab"]',
     loggingEmail: 'input[placeholder="Email"]',
@@ -14,5 +14,5 @@ module.exports = {
     loginButton: 'button[class="primary"]',
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
-    
+
 }
