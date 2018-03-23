@@ -1,7 +1,7 @@
 const userData = require('./userData')
 const selectors = require('./selectors')
 
-
+//Functions 
 const login = (browser, userData) => {
     browser
     .setValue(selectors.loggingEmail, userData.loginEmail)
