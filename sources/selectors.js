@@ -15,5 +15,7 @@ module.exports = {
     logoutBtton: 'label[data-bind="text: strings.logout"]',
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
+//Add deck(s)
+    
 
 }

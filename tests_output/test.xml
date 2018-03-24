@@ -5,18 +5,18 @@
 
   <testsuite name="test"
     errors="1" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="0.007000" timestamp="Fri, 23 Mar 2018 17:57:43 GMT">
+    tests="1" time="0.005000" timestamp="Sat, 24 Mar 2018 13:48:22 GMT">
   
-    <testcase name="Creating An Account" classname="test" time="0.007000" assertions="0">
+    <testcase name="Adding Deck(s) and Card(s)" classname="test" time="0.005000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Test / Creating An Account]:
+        Error while running [Test / Adding Deck(s) and Card(s)]:
 
-  TypeError: browser.waitForElementPresent(...).assert.containsText(...).click(...).setValue(...).setValue(...).setValue(...).clickByText is not a function
-    at Object.Creating An Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:18:14)
+  TypeError: functions.addDeck is not a function
+    at Object.Adding Deck(s) and Card(s) (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:39:23)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)

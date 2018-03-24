@@ -34,7 +34,9 @@ module.exports = {
     //         .pause(2000)
     //         .click(selectors.logoutBtton)
     // },
-    'Adding Deck and Card': browser => {
+    'Adding Deck(s) and Card(s)': browser => {
             functions.login(browser, userData)
+            functions.addDeck(browser)
+
     },
 }
