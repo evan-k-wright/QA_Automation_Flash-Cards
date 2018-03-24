@@ -27,6 +27,8 @@ module.exports = {
     saveCard: 'button[class="primary"]',
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
+//Deleting Account
+    settings: 'label[data-bind="text: strings.settings"]',
 
 
 }

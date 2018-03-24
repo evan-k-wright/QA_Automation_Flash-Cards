@@ -39,12 +39,13 @@ module.exports = {
             functions.addDeck(browser, userData)
     },*/
 
-    'Subscribing': browser => {
+    /*'Subscribing': browser => {
         functions.login(browser, userData)
         functions.subscribe(browser, userData)
-    },
+    },*/
 
-    //'Deleting Account': browser => {
-    //    functions.login(browser, userData)
-    //},
+    'Deleting Account': browser => {
+        functions.login(browser, userData)
+        functions.deleteingAccount(browser)
+    },
 }

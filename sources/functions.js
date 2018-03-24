@@ -34,8 +34,14 @@ const subscribe =(browser, userData) => {
 
 }
 
+const deletingAccount =(browser) => {
+    browser
+        .click(selectors.settings)
+}
+
 module.exports = {
     login: login,
     addDeck: addDeck,
-    subscribe: subscribe
+    subscribe: subscribe,
+    deleteingAccount: deletingAccount,
 }
