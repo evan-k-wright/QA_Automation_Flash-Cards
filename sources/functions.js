@@ -7,7 +7,7 @@ const login = (browser, userData) => {
         .setValue(selectors.loggingEmail, userData.loginEmail)
         .setValue(selectors.logginPassword, userData.loginPass)
         .click(selectors.loginButton)
-        .pause(2000)
+        .pause(1000)
 }
 
 const addDeck =(browser, userData) => {
@@ -26,10 +26,16 @@ const addDeck =(browser, userData) => {
         .setValue(selectors.cardBack, userData.answer)
         .pause(500)
         .click(selectors.saveCard)
-        
+}
+
+const subscribe =(browser, userData) => {
+    browser
+        .click(selectors.subscription)
+
 }
 
 module.exports = {
     login: login,
-    addDeck: addDeck
+    addDeck: addDeck,
+    subscribe: subscribe
 }

@@ -24,6 +24,9 @@ module.exports = {
     addCard: 'i[data-bind="css: strings.addIcon"]',
     cardFront: 'textarea[placeholder="Enter card front"]',
     cardBack: 'textarea[placeholder="Enter card back"]',
-    saveCard: 'button[class="primary"]'
+    saveCard: 'button[class="primary"]',
+//Subscribing
+    subscription: 'label[data-bind="text: strings.subscription"]',
+
 
 }

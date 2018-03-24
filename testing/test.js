@@ -34,12 +34,17 @@ module.exports = {
     //         .pause(2000)
     //         .click(selectors.logoutBtton)
     // },
-    'Adding Deck(s) and Card(s)': browser => {
+    /*'Adding Deck(s) and Card(s)': browser => {
             functions.login(browser, userData)
             functions.addDeck(browser, userData)
+    },*/
 
-    },
-    'Deleting Account': browser => {
+    'Subscribing': browser => {
         functions.login(browser, userData)
-    }
+        functions.subscribe(browser, userData)
+    },
+
+    //'Deleting Account': browser => {
+    //    functions.login(browser, userData)
+    //},
 }
