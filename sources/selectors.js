@@ -18,8 +18,12 @@ module.exports = {
 //Add deck(s)
     addDeck: 'i[data-bind="css: strings.addIcon"]',
     deckName: 'textarea[placeholder="Enter deck name"]',
-    saveDeck: 'button[class="primary"]'
+    saveDeck: 'button[class="primary"]',
 //Adding card(s)
-    
+    cardAdd: 'label[data-bind="text: name"]',
+    addCard: 'i[data-bind="css: strings.addIcon"]',
+    cardFront: 'textarea[placeholder="Enter card front"]',
+    cardBack: 'textarea[placeholder="Enter card back"]',
+    saveCard: 'button[class="primary"]'
 
 }

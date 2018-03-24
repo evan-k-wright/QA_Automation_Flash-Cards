@@ -13,11 +13,20 @@ const login = (browser, userData) => {
 const addDeck =(browser, userData) => {
     browser
         .click(selectors.decks)
-        .pause(2000)
+        .pause(500)
         .click(selectors.addDeck)
         .setValue(selectors.deckName, userData.deckName)
-        .pause(1000)
+        .pause(500)
         .click(selectors.saveDeck)
+        .pause(500)
+        .click(selectors.cardAdd)
+        .pause(500)
+        .click(selectors.addCard)
+        .setValue(selectors.cardFront, userData.question)
+        .setValue(selectors.cardBack, userData.answer)
+        .pause(500)
+        .click(selectors.saveCard)
+        
 }
 
 module.exports = {

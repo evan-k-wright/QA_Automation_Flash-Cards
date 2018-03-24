@@ -39,4 +39,7 @@ module.exports = {
             functions.addDeck(browser, userData)
 
     },
+    'Deleting Account': browser => {
+        functions.login(browser, userData)
+    }
 }
