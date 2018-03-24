@@ -16,6 +16,10 @@ module.exports = {
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
 //Add deck(s)
+    addDeck: 'i[data-bind="css: strings.addIcon"]',
+    deckName: 'textarea[placeholder="Enter deck name"]',
+    saveDeck: 'button[class="primary"]'
+//Adding card(s)
     
 
 }

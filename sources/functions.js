@@ -14,7 +14,10 @@ const addDeck =(browser, userData) => {
     browser
         .click(selectors.decks)
         .pause(2000)
-
+        .click(selectors.addDeck)
+        .setValue(selectors.deckName, userData.deckName)
+        .pause(1000)
+        .click(selectors.saveDeck)
 }
 
 module.exports = {

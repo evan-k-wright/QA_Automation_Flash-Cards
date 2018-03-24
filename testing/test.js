@@ -36,7 +36,7 @@ module.exports = {
     // },
     'Adding Deck(s) and Card(s)': browser => {
             functions.login(browser, userData)
-            functions.addDeck(browser)
+            functions.addDeck(browser, userData)
 
     },
 }
