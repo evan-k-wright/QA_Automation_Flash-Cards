@@ -5,19 +5,19 @@
 
   <testsuite name="test"
     errors="1" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="0.005000" timestamp="Sat, 24 Mar 2018 14:05:28 GMT">
+    tests="1" time="0.005000" timestamp="Mon, 26 Mar 2018 22:09:02 GMT">
   
-    <testcase name="Adding Deck(s) and Card(s)" classname="test" time="0.005000" assertions="0">
+    <testcase name="Deleting Account" classname="test" time="0.005000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Test / Adding Deck(s) and Card(s)]:
+        Error while running [Test / Deleting Account]:
 
-  TypeError: browser.click(...).waitForElememtPresent is not a function
-    at Object.addDeck (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:16:10)
-    at Object.Adding Deck(s) and Card(s) (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:39:23)
+  TypeError: Cannot read property &#39;loginPassword&#39; of undefined
+    at Object.deletingAccount [as deleteingAccount] (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:43:50)
+    at Object.Deleting Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:49:19)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)

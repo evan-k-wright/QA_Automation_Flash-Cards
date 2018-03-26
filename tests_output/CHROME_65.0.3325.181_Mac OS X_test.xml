@@ -5,9 +5,13 @@
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="4.783" timestamp="Sat, 24 Mar 2018 22:00:44 GMT">
+    tests="1" time="14.28" timestamp="Mon, 26 Mar 2018 22:14:41 GMT">
   
-    <testcase name="Deleting Account" classname="test" time="4.783" assertions="0">
+    <testcase name="Deleting Account" classname="test" time="14.28" assertions="2">
+
+    
+
+    
     </testcase>
   
 

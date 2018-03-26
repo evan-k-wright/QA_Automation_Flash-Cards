@@ -1,7 +1,7 @@
 module.exports = {
 //Login
     loginEmail: 'rideburtonsnow3@gmail.com',
-    loginPass: 'Glock22.40',
+    loginPassword: 'Glock22.40',
 //Deck(s) name
     deckName: 'About Me',
 //Card(s) questions and answers

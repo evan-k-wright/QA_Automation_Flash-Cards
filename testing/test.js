@@ -46,6 +46,6 @@ module.exports = {
 
     'Deleting Account': browser => {
         functions.login(browser, userData)
-        functions.deleteingAccount(browser)
+        functions.deleteingAccount(browser, userData)
     },
 }

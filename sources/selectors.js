@@ -8,9 +8,9 @@ module.exports = {
     termsUseAccept: '/html/body/div[2]/div[2]/div/div[2]/button[1]',
     getStarted: '',
 //Login And Out
-    loggin: 'label[data-bind="text: strings.loginTab"]',
-    loggingEmail: 'input[placeholder="Email"]',
-    logginPassword: 'input[placeholder="Password"]',
+    login: 'label[data-bind="text: strings.loginTab"]',
+    logingEmail: 'input[placeholder="Email"]',
+    loginPassword: 'input[placeholder="Password"]',
     loginButton: 'button[class="primary"]',
     logoutBtton: 'label[data-bind="text: strings.logout"]',
 //Home Page
@@ -29,6 +29,9 @@ module.exports = {
     subscription: 'label[data-bind="text: strings.subscription"]',
 //Deleting Account
     settings: 'label[data-bind="text: strings.settings"]',
-
-
+    delete: 'button[class="destructive"]',
+    authenticate: 'button[class="primary"]',
+    password2: 'input[data-bind="attr: { placeholder: strings.passwordPlaceholder }, value: password"]',
+    reauthenticate: 'button[data-bind="click: clickReauthenticateWithEmail, text: strings.reauthenticate, visible: reauthenticateWithEmailVisible"]',
+    
 }

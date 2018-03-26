@@ -4,10 +4,10 @@ const selectors = require('./selectors')
 //Functions 
 const login = (browser, userData) => {
     browser
-        .setValue(selectors.loggingEmail, userData.loginEmail)
-        .setValue(selectors.logginPassword, userData.loginPass)
+        .setValue(selectors.logingEmail, userData.loginEmail)
+        .setValue(selectors.loginPassword, userData.loginPassword)
         .click(selectors.loginButton)
-        .pause(1000)
+        .waitForElementVisible(selectors.settings, 3000)
 }
 
 const addDeck =(browser, userData) => {
@@ -34,9 +34,15 @@ const subscribe =(browser, userData) => {
 
 }
 
-const deletingAccount =(browser) => {
+const deletingAccount =(browser, userData) => {
     browser
         .click(selectors.settings)
+        .waitForElementVisible(selectors.delete, 2000)
+        .click(selectors.delete)
+        .click(selectors.authenticate)
+        .pause(2000)
+        .setValue(selectors.password2, userData.loginPassword)
+        .click(selectors.reauthenticate)
 }
 
 module.exports = {
