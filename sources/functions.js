@@ -40,9 +40,19 @@ const deletingAccount =(browser, userData) => {
         .waitForElementVisible(selectors.delete, 2000)
         .click(selectors.delete)
         .click(selectors.authenticate)
-        .pause(2000)
+        .pause(1000)
         .setValue(selectors.password2, userData.loginPassword)
         .click(selectors.reauthenticate)
+        .pause(1000)
+        .click(selectors.delete)
+        .useXpath()
+        .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 5000)
+        .useCss()
+        .click(selectors.delete)
+        .pause(13000)
+        .getAlertText( (results) => {
+            console.log(results.value)
+        })
 }
 
 module.exports = {

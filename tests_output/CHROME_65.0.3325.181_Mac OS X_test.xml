@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="test"
-    errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="14.28" timestamp="Mon, 26 Mar 2018 22:14:41 GMT">
+    errors="0" failures="1" hostname="" id="" package="test" skipped="0"
+    tests="1" time="13.62" timestamp="Mon, 26 Mar 2018 22:47:00 GMT">
   
-    <testcase name="Deleting Account" classname="test" time="14.28" assertions="2">
+    <testcase name="Deleting Account" classname="test" time="13.62" assertions="3">
 
     
+
+      <failure message="Timed out while waiting for element &lt;//label[.=&#34;Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered.&#34;]&gt; to be visible for 5000 milliseconds.">    at Object.deletingAccount [as deleteingAccount] (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:49:10)
+    at Object.Deleting Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:49:19)</failure>
 
     
     </testcase>
