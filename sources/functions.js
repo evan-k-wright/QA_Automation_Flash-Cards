@@ -7,7 +7,7 @@ const login = (browser, userData) => {
         .setValue(selectors.logingEmail, userData.loginEmail)
         .setValue(selectors.loginPassword, userData.loginPassword)
         .click(selectors.loginButton)
-        .waitForElementVisible(selectors.settings, 3000)
+        .pause(3000)
 }
 
 const addDeck =(browser, userData) => {
@@ -31,6 +31,8 @@ const addDeck =(browser, userData) => {
 const subscribe =(browser, userData) => {
     browser
         .click(selectors.subscription)
+        .waitForElementPresent(selectors.upGrade, 3000)
+        .click(selectors.upGrade)
 
 }
 

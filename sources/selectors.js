@@ -27,6 +27,7 @@ module.exports = {
     saveCard: 'button[class="primary"]',
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
+    upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
 //Deleting Account
     settings: 'label[data-bind="text: strings.settings"]',
     delete: 'button[class="destructive"]',
