@@ -33,5 +33,5 @@ module.exports = {
     authenticate: 'button[class="primary"]',
     password2: 'input[data-bind="attr: { placeholder: strings.passwordPlaceholder }, value: password"]',
     reauthenticate: 'button[data-bind="click: clickReauthenticateWithEmail, text: strings.reauthenticate, visible: reauthenticateWithEmailVisible"]',
-    
+    notDelete: 'button[data-bind="click: clickDeleteUserCancel, text: strings.deleteUserCancel, visible: deleteUserCancelVisible"]',
 }

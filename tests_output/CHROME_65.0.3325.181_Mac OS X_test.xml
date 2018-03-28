@@ -5,13 +5,15 @@
 
   <testsuite name="test"
     errors="0" failures="1" hostname="" id="" package="test" skipped="0"
-    tests="1" time="13.62" timestamp="Mon, 26 Mar 2018 22:47:00 GMT">
+    tests="1" time="9.989" timestamp="Wed, 28 Mar 2018 22:17:48 GMT">
   
-    <testcase name="Deleting Account" classname="test" time="13.62" assertions="3">
+    <testcase name="Deleting Account" classname="test" time="9.989" assertions="4">
 
     
 
-      <failure message="Timed out while waiting for element &lt;//label[.=&#34;Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered.&#34;]&gt; to be visible for 5000 milliseconds.">    at Object.deletingAccount [as deleteingAccount] (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:49:10)
+    
+
+      <failure message="Timed out while waiting for element &lt;button[data-bind=&#34;click: clickDeleteUserCancel, text: strings.deleteUserCancel, visible: deleteUserCancelVisible&#34;]&gt; to be removed for 2000 milliseconds.">    at Object.deletingAccount [as deleteingAccount] (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:52:10)
     at Object.Deleting Account (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test.js:49:19)</failure>
 
     

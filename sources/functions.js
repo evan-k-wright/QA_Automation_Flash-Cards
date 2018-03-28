@@ -46,13 +46,11 @@ const deletingAccount =(browser, userData) => {
         .pause(1000)
         .click(selectors.delete)
         .useXpath()
-        .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 5000)
+        .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 10000)
         .useCss()
         .click(selectors.delete)
-        .pause(13000)
-        .getAlertText( (results) => {
-            console.log(results.value)
-        })
+        .waitForElementNotPresent(selectors.notDelete, 2000)
+        
 }
 
 module.exports = {
