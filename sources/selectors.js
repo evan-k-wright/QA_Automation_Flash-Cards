@@ -28,7 +28,7 @@ module.exports = {
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
-    ccNumber: 'input[placeholder="Card number"]',
+    ccNumber: 'input[name="cardnumber"]',
     date: 'input[autocomplete="cc-exp"]',
     cvc: 'input[autocomplete="cc-csc"]',
     zipCode: 'input[autocomplete="postal-code"]',

@@ -33,7 +33,7 @@ const subscribe =(browser, userData) => {
         .click(selectors.subscription)
         .waitForElementPresent(selectors.upGrade, 3000)
         .click(selectors.upGrade)
-        .waitForElementPresent(selectors.ccNumber, 3000)
+        .pause(3000)
         .setValue(selectors.ccNumber, userData.cardNumber)
 
 
