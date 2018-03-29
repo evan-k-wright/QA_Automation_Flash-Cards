@@ -28,6 +28,10 @@ module.exports = {
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
+    ccNumber: 'input[placeholder="Card number"]',
+    date: 'input[autocomplete="cc-exp"]',
+    cvc: 'input[autocomplete="cc-csc"]',
+    zipCode: 'input[autocomplete="postal-code"]',
 //Deleting Account
     settings: 'label[data-bind="text: strings.settings"]',
     delete: 'button[class="destructive"]',

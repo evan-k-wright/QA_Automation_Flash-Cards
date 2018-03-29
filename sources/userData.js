@@ -7,5 +7,9 @@ module.exports = {
 //Card(s) questions and answers
     question: 'What is my favorite kind of computer?',
     answer: 'A Mac',
-
+//Subscription
+    cardNumber: '4242 4242 4242 4242',
+    expDate: '07 18',
+    cvcNumber: '801',
+    zipCode: '84101',
 }
