@@ -7,6 +7,11 @@ module.exports = {
     signupButton: '/html/body/div[2]/div[2]/div/div[2]/div[4]/div/button[3]',
     termsUseAccept: '/html/body/div[2]/div[2]/div/div[2]/button[1]',
     getStarted: '',
+//Sign Up Google
+    signUp: 'label[data-bind="text: strings.signUpTab"]',
+    google: 'button[data-bind="click: clickLoginWithGoogle, text: strings.signUpWithGoogle, visible: signUpWithGoogleVisible"]',
+    account: 'p[data-email="beardedrebel801@gmail.com"]',
+
 //Login And Out
     login: 'label[data-bind="text: strings.loginTab"]',
     logingEmail: 'input[placeholder="Email"]',

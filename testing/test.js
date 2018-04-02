@@ -26,6 +26,11 @@ module.exports = {
 //             .click('button[class="primary"]')
 //             .pause(3000)
 //   },
+    'Creating An Account with Google': browser => {
+        browser
+            functions.googleAdd(browser, userData)
+
+    },
     // 'Logging In And Out': browser => {
     //     browser
     //         .setValue(selectors.loggingEmail, 'testing022@gmail.com')
@@ -39,10 +44,10 @@ module.exports = {
             functions.addDeck(browser, userData)
     },*/
 
-    'Subscribing': browser => {
-        functions.login(browser, userData)
-        functions.subscribe(browser, userData)
-    },
+    // 'Subscribing': browser => {
+    //     functions.login(browser, userData)
+    //     functions.subscribe(browser, userData)
+    // },
 
     /*'Deleting Account': browser => {
         functions.login(browser, userData)

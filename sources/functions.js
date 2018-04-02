@@ -2,6 +2,15 @@ const userData = require('./userData')
 const selectors = require('./selectors')
 
 //Functions 
+const googleAdd = (browser, userData) => {
+    browser
+        .click(selectors.signUp)
+        .waitForElementPresent(selectors.google, 3000)
+        .click(selectors.google)
+
+}
+
+
 const login = (browser, userData) => {
     browser
         .setValue(selectors.logingEmail, userData.loginEmail)
@@ -59,6 +68,7 @@ const deletingAccount =(browser, userData) => {
 }
 
 module.exports = {
+    googleAdd: googleAdd,
     login: login,
     addDeck: addDeck,
     subscribe: subscribe,
