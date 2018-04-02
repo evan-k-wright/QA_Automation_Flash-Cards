@@ -10,7 +10,8 @@ module.exports = {
 //Sign Up Google
     signUp: 'label[data-bind="text: strings.signUpTab"]',
     google: 'button[data-bind="click: clickLoginWithGoogle, text: strings.signUpWithGoogle, visible: signUpWithGoogleVisible"]',
-    account: 'p[data-email="beardedrebel801@gmail.com"]',
+    accountEmail: 'input[type="email"]',
+    nextPage: '#identifierNext > content',
 
 //Login And Out
     login: 'label[data-bind="text: strings.loginTab"]',

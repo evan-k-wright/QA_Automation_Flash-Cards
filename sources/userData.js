@@ -1,4 +1,7 @@
 module.exports = {
+// Creating an accout with google
+    googleEmail: 'beardedrebel801@gmail.com',
+    googlePassword: 'Glock22.40',
 //Login
     loginEmail: 'rideburtonsnow3@gmail.com',
     loginPassword: 'Glock22.40',

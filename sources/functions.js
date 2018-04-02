@@ -7,6 +7,10 @@ const googleAdd = (browser, userData) => {
         .click(selectors.signUp)
         .waitForElementPresent(selectors.google, 3000)
         .click(selectors.google)
+        .pause(3000)
+        .setValue(selectors.accountEmail, userData.googleEmail)
+        .pause(1000)
+        .click(selectors.nextPage)
 
 }
 
