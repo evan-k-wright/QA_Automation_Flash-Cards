@@ -10,10 +10,16 @@ module.exports = {
         browser
     },
 
-    /*'EP-66 Adding Deck(s) and Card(s)': browser => {
-            functions.login(browser, userData)
-            functions.addDeck(browser, userData)
-    },*/
+    // 'EP-66 Adding Deck(s) and Card(s)': browser => {
+    //         functions.login(browser, userData)
+    //         functions.addDeck(browser, userData)
+    // },
+
+    'EP-67 Editing Deck(s) and Card(s)': browser => {
+        browser
+            
+
+    },
 
     // 'EP-73 Subscribing': browser => {
     //     functions.login(browser, userData)
