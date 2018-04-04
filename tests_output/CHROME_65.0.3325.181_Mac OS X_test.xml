@@ -5,9 +5,17 @@
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="7.903" timestamp="Mon, 02 Apr 2018 22:02:06 GMT">
+    tests="1" time="17.51" timestamp="Wed, 04 Apr 2018 20:31:02 GMT">
   
-    <testcase name="Creating An Account with Google" classname="test" time="7.903" assertions="1">
+    <testcase name="Creating An Account with Google" classname="test" time="17.51" assertions="5">
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>

@@ -9,7 +9,7 @@ module.exports = {
     after: browser => {
         browser
     },
-//   'Creating An Account': browser => {
+//   'EP-64 Creating An Account': browser => {
 //         browser
 //             .waitForElementPresent('body', 3000)
 //             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
@@ -26,12 +26,12 @@ module.exports = {
 //             .click('button[class="primary"]')
 //             .pause(3000)
 //   },
-    'Creating An Account with Google': browser => {
+    'EP-70 Creating An Account with Google': browser => {
         browser
             functions.googleAdd(browser, userData)
 
     },
-    // 'Logging In And Out': browser => {
+    // 'EP-65 Logging In And Out': browser => {
     //     browser
     //         .setValue(selectors.loggingEmail, 'testing022@gmail.com')
     //         .setValue(selectors.logginPassword, 'test022')
@@ -39,17 +39,17 @@ module.exports = {
     //         .pause(2000)
     //         .click(selectors.logoutBtton)
     // },
-    /*'Adding Deck(s) and Card(s)': browser => {
+    /*'EP-66 Adding Deck(s) and Card(s)': browser => {
             functions.login(browser, userData)
             functions.addDeck(browser, userData)
     },*/
 
-    // 'Subscribing': browser => {
+    // 'EP-73 Subscribing': browser => {
     //     functions.login(browser, userData)
     //     functions.subscribe(browser, userData)
     // },
 
-    /*'Deleting Account': browser => {
+    /*'EP-76 Deleting Account': browser => {
         functions.login(browser, userData)
         functions.deleteingAccount(browser, userData)
     },*/

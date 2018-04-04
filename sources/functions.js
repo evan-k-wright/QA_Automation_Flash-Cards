@@ -11,6 +11,16 @@ const googleAdd = (browser, userData) => {
         .setValue(selectors.accountEmail, userData.googleEmail)
         .pause(1000)
         .click(selectors.nextPage)
+        .waitForElementVisible(selectors.ePassword, 2000)
+        .setValue(selectors.ePassword, userData.googlePassword)
+        .useXpath()
+        .waitForElementVisible(selectors.nextB, 3000)
+        .click(selectors.nextB)
+        .waitForElementVisible(selectors.acceptMe, 5000)
+        .click(selectors.acceptMe)
+        .waitForElementPresent(selectors.getStarted, 3000)
+        .click(selectors.getStarted)
+
 
 }
 
