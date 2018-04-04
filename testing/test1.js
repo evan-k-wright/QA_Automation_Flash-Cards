@@ -26,31 +26,17 @@ module.exports = {
 //             .click('button[class="primary"]')
 //             .pause(3000)
 //   },
-    'EP-70 Creating An Account with Google': browser => {
-        browser
-            functions.googleAdd(browser, userData)
-
-    },
-    // 'EP-65 Logging In And Out': browser => {
+    // 'EP-70 Creating An Account with Google': browser => {
     //     browser
-    //         .setValue(selectors.loggingEmail, 'testing022@gmail.com')
-    //         .setValue(selectors.logginPassword, 'test022')
-    //         .click(selectors.loginButton)
-    //         .pause(2000)
-    //         .click(selectors.logoutBtton)
-    // },
-    /*'EP-66 Adding Deck(s) and Card(s)': browser => {
-            functions.login(browser, userData)
-            functions.addDeck(browser, userData)
-    },*/
+    //         functions.googleAdd(browser, userData)
 
-    // 'EP-73 Subscribing': browser => {
-    //     functions.login(browser, userData)
-    //     functions.subscribe(browser, userData)
     // },
-
-    /*'EP-76 Deleting Account': browser => {
-        functions.login(browser, userData)
-        functions.deleteingAccount(browser, userData)
-    },*/
+    'EP-65 Logging In And Out': browser => {
+        browser
+            .setValue(selectors.loggingEmail, userData.loginEmail)
+            .setValue(selectors.logginPassword, userData.loginPassword)
+            .click(selectors.loginButton)
+            .waitForElementVisable(selectors.logoutBtton, 2000)
+            .click(selectors.logoutBtton)
+    },
 }
