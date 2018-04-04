@@ -5,11 +5,9 @@
 
   <testsuite name="test1"
     errors="0" failures="0" hostname="" id="" package="test1" skipped="0"
-    tests="1" time="6.253" timestamp="Wed, 04 Apr 2018 22:35:34 GMT">
+    tests="1" time="4.468" timestamp="Wed, 04 Apr 2018 23:09:40 GMT">
   
-    <testcase name="EP-65 Logging In And Out" classname="test1" time="6.253" assertions="1">
-
-    
+    <testcase name="EP-71 Login and Logout With Google Account" classname="test1" time="4.468" assertions="0">
     </testcase>
   
 

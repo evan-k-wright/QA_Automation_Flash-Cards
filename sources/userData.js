@@ -7,6 +7,10 @@ module.exports = {
     loginEmail: 'rideburtonsnow3@gmail.com',
     loginPassword: 'Glock22.40',
 
+//Login Logout Google
+    gmailEmail: 'rideburtonsnow3@gmail.com',
+    gmailPassword: 'Emerica.03',
+
 //Deck(s) name
     deckName: 'About Me',
 

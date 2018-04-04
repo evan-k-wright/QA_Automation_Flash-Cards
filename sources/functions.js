@@ -20,8 +20,6 @@ const googleAdd = (browser, userData) => {
         .click(selectors.acceptMe)
         .waitForElementPresent(selectors.getStarted, 3000)
         .click(selectors.getStarted)
-
-
 }
 
 const loginLogout = (browser, userData) => {
@@ -33,7 +31,14 @@ const loginLogout = (browser, userData) => {
     .click(selectors.logoutBtton)
 }
 
+const loginLogoutGoogle = (browser, userData) => {
+    browser
+        .click(selectors.loginGoogle)
+        .waitForElementVisible(selectors.gmailEmail, 3000)
+        .setValue(selectors.gmailEmail, userData.gmailEmail)
+}
 
+//Used for all tests
 const login = (browser, userData) => {
     browser
         .setValue(selectors.logingEmail, userData.loginEmail)
@@ -42,6 +47,7 @@ const login = (browser, userData) => {
         .pause(3000)
 }
 
+//EP-66
 const addDeck =(browser, userData) => {
     browser
         .click(selectors.decks)
@@ -60,6 +66,7 @@ const addDeck =(browser, userData) => {
         .click(selectors.saveCard)
 }
 
+//EP-73
 const subscribe =(browser, userData) => {
     browser
         .click(selectors.subscription)
@@ -71,6 +78,7 @@ const subscribe =(browser, userData) => {
 
 }
 
+//EP-76
 const deletingAccount =(browser, userData) => {
     browser
         .click(selectors.settings)
@@ -93,6 +101,7 @@ const deletingAccount =(browser, userData) => {
 module.exports = {
     googleAdd: googleAdd,
     loginLogout: loginLogout,
+    loginLogoutGoogle: loginLogoutGoogle,
     login: login,
     addDeck: addDeck,
     subscribe: subscribe,

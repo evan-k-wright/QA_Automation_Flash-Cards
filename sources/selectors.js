@@ -17,14 +17,16 @@ module.exports = {
     nextB: '//span[.="Next"]',
     acceptMe: '//button[.="Accept"]',
 
-
-
 //Login And Out
     login: 'label[data-bind="text: strings.loginTab"]',
     logingEmail: 'input[placeholder="Email"]',
     loginPassword: 'input[placeholder="Password"]',
     loginButton: 'button[class="primary"]',
     logoutBtton: 'label[data-bind="text: strings.logout"]',
+
+//Login and Logout with Google
+    loginGoogle: 'button[data-bind="click: clickLoginWithGoogle, text: strings.loginWithGoogle, visible: loginWithGoogleVisible"]',
+    gmailEmail: 'input[type="email"]',
 
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
