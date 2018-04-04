@@ -26,7 +26,10 @@ module.exports = {
 
 //Login and Logout with Google
     loginGoogle: 'button[data-bind="click: clickLoginWithGoogle, text: strings.loginWithGoogle, visible: loginWithGoogleVisible"]',
-    gmailEmail: 'input[type="email"]',
+    gmailEmail: '(//input[@class="whsOnd zHQkBf"])[1]',
+    toPassword: '(//span[@class="RveJvd snByac"])[2]',
+    gmailPassword: 'input[type="password"]',
+    nextButton: '(//span[@class="RveJvd snByac"])[1]',
 
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',

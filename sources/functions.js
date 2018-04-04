@@ -33,9 +33,20 @@ const loginLogout = (browser, userData) => {
 
 const loginLogoutGoogle = (browser, userData) => {
     browser
+        .waitForElementVisible(selectors.loginGoogle, 3000)
         .click(selectors.loginGoogle)
+        .useXpath()
         .waitForElementVisible(selectors.gmailEmail, 3000)
         .setValue(selectors.gmailEmail, userData.gmailEmail)
+        .click(selectors.toPassword)
+        .useCss()
+        .waitForElementVisible(selectors.gmailPassword, 3000)
+        .setValue(selectors.gmailPassword, userData.gmailPassword)
+        .useXpath()
+        .click(selectors.nextButton)
+        .useCss()
+        .waitForElementVisible(selectors.logoutBtton, 5000)
+        .click(selectors.logoutBtton)
 }
 
 //Used for all tests

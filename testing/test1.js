@@ -35,7 +35,7 @@ module.exports = {
     //     functions.loginLogout(browser, userData)
     // },
 
-    'EP-71 Login and Logout With Google Account': browser => {
-        functions.loginLogoutGoogle(browser, userData)
-    },
+    // 'EP-71 Login and Logout With Google Account': browser => {
+    //     functions.loginLogoutGoogle(browser, userData)
+    // },
 }
