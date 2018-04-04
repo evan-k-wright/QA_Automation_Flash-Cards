@@ -5,7 +5,7 @@
 
   <testsuite name="test2"
     errors="0" failures="0" hostname="" id="" package="test2" skipped="0"
-    tests="0" time="0.000" timestamp="Wed, 04 Apr 2018 22:24:52 GMT">
+    tests="0" time="0.000" timestamp="Wed, 04 Apr 2018 22:30:59 GMT">
   
 
   
@@ -13,7 +13,8 @@
         Error while running [Test1 / EP-65 Logging In And Out]:
 
   TypeError: browser.setValue(...).setValue(...).click(...).waitForElementVisable is not a function
-    at Object.EP-65 Logging In And Out (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test1.js:39:14)
+    at Object.loginLogout (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/sources/functions.js:32:6)
+    at Object.EP-65 Logging In And Out (/Users/Hosea/Desktop/DevMtn/Projects/ClassProjects/Automation/flashCards/testing/test1.js:35:19)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
@@ -22,7 +23,6 @@
     at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
     at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
     at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
     </system-err>
   
 

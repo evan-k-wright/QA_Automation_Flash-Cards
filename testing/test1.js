@@ -31,12 +31,11 @@ module.exports = {
     //         functions.googleAdd(browser, userData)
 
     // },
-    'EP-65 Logging In And Out': browser => {
-        browser
-            .setValue(selectors.loggingEmail, userData.loginEmail)
-            .setValue(selectors.logginPassword, userData.loginPassword)
-            .click(selectors.loginButton)
-            .waitForElementVisable(selectors.logoutBtton, 2000)
-            .click(selectors.logoutBtton)
+    // 'EP-65 Logging In And Out': browser => {
+    //     functions.loginLogout(browser, userData)
+    // },
+
+    'EP-71 Login and Logout With Google Account': browser => {
+
     },
 }

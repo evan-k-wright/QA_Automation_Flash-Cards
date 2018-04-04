@@ -1,7 +1,7 @@
 const userData = require('./userData')
 const selectors = require('./selectors')
 
-//Functions 
+//EP-70
 const googleAdd = (browser, userData) => {
     browser
         .click(selectors.signUp)
@@ -22,6 +22,15 @@ const googleAdd = (browser, userData) => {
         .click(selectors.getStarted)
 
 
+}
+
+const loginLogout = (browser, userData) => {
+    browser
+    .setValue(selectors.logingEmail, userData.loginEmail)
+    .setValue(selectors.loginPassword, userData.loginPassword)
+    .click(selectors.loginButton)
+    .waitForElementVisible(selectors.logoutBtton, 3000)
+    .click(selectors.logoutBtton)
 }
 
 
@@ -83,6 +92,7 @@ const deletingAccount =(browser, userData) => {
 
 module.exports = {
     googleAdd: googleAdd,
+    loginLogout: loginLogout,
     login: login,
     addDeck: addDeck,
     subscribe: subscribe,
