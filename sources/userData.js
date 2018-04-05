@@ -21,6 +21,8 @@ module.exports = {
 //Editing Deck and Card
     deckNameNew: 'Do you know Evan?',
     decay: '15',
+    cardFront: 'When was I born?',
+    cardBack: 'June 10, 1992',
 
 //Subscription
     cardNumber: '4242 4242 4242 4242',

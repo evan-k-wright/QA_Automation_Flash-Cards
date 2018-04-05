@@ -19,6 +19,7 @@ module.exports = {
         browser
             functions.login(browser, userData)
             functions.editing(browser, userData)
+            functions.ediitngCards(browser, userData)
 
     },
 

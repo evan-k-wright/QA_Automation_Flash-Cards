@@ -95,7 +95,12 @@ const editing =(browser, userData) => {
 
 //EP-67
 const ediitngCards =(browser, userData) => {
-    
+    browser
+        .pause(500)
+        .click(selectors.clickDeck)
+        .waitForElementVisible(selectors.cardPen, 2000)
+        .click(selectors.cardPen)
+
 }
 
 
@@ -138,6 +143,7 @@ module.exports = {
     login: login,
     addDeck: addDeck,
     editing: editing,
+    ediitngCards: ediitngCards,
     subscribe: subscribe,
     deleteingAccount: deletingAccount,
 }

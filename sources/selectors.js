@@ -53,7 +53,10 @@ module.exports = {
     masterDay: '//input[@type="range"]',
     save: '//button[@data-bind="click: clickSave, disable: saveDisabled, text: strings.save, visible: saveVisible"]',
     
-    
+//Edit Cards
+    clickDeck: '(//div[@class="col-12-12"])[1]',
+    cardPen: '//i[@class="fa fa-2x fa-pencil-square-o"]',
+
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
