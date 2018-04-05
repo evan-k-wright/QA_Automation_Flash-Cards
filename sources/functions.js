@@ -100,7 +100,11 @@ const ediitngCards =(browser, userData) => {
         .click(selectors.clickDeck)
         .waitForElementVisible(selectors.cardPen, 2000)
         .click(selectors.cardPen)
-
+        .clearValue(selectors.front)
+        .setValue(selectors.front, userData.cardFront)
+        .clearValue(selectors.back)
+        .setValue(selectors.back, userData.cardBack)
+        .click(selectors.cardSave)
 }
 
 

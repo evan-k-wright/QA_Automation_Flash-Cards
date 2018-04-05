@@ -56,6 +56,9 @@ module.exports = {
 //Edit Cards
     clickDeck: '(//div[@class="col-12-12"])[1]',
     cardPen: '//i[@class="fa fa-2x fa-pencil-square-o"]',
+    front: '(//textarea[@rows="1"])[1]',
+    back: '(//textarea[@rows="1"])[2]',
+    cardSave: '//button[.="Save"]',
 
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
