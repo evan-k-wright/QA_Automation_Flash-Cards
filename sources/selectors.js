@@ -33,6 +33,8 @@ module.exports = {
 
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
+    contactUs: 'label[data-bind="text: strings.contact"]', 
+    contactTitle: 'h1[class="page-title"]',
 
 //Add deck(s)
     addDeck: 'i[data-bind="css: strings.addIcon"]',

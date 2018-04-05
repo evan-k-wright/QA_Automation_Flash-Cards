@@ -162,8 +162,13 @@ const subscribe = (browser, userData) => {
         .click(selectors.upGrade)
         .pause(3000)
         .click(selectors.masterDay, userData.cardNumber)
+}
 
-
+//EP-76 - test3.js
+const contact = (browser) => {
+    browser
+        .click(selectors.contactUs)
+        .expect.element(selectors.contactTitle).text.to.equal("Contact US")
 }
 
 //EP-76
@@ -197,5 +202,6 @@ module.exports = {
     deletingDeckCard: deletingDeckCard,
     study: study,
     subscribe: subscribe,
+    contact: contact,
     deleteingAccount: deletingAccount,
 }

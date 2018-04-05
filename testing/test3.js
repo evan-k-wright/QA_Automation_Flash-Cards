@@ -14,8 +14,15 @@ module.exports = {
     //     functions.subscribe(browser, userData)
     // },
 
+    'EP-74 Contact Us': browser => {
+        functions.login(browser, userData)
+        functions.contact(browser)
+        //(this is a comment) Test will fail at the end becuase of bug EP-97
+    }
+
     /*'EP-76 Deleting Account': browser => {
         functions.login(browser, userData)
         functions.deleteingAccount(browser, userData)
+        //(this is a comment) Test will fail at the end becuse of bug EP-100
     },*/
 }

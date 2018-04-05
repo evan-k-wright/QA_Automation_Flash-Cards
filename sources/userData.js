@@ -4,8 +4,8 @@ module.exports = {
     googlePassword: 'Glock22.40',
 
 //Login
-    loginEmail: 'rideburtonsnow3@gmail.com',
-    loginPassword: 'Glock22.40',
+    loginEmail: 'test801@gmail.com',
+    loginPassword: 'test801',
 
 //Login Logout Google
     gmailEmail: 'rideburtonsnow3@gmail.com',

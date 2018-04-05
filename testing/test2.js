@@ -29,10 +29,10 @@ module.exports = {
     //         functions.study(browser)
     // },
 
-    'EP-72 Deleting Card(s) and Deck(s)': browser => {
+    /*'EP-72 Deleting Card(s) and Deck(s)': browser => {
         functions.login(browser, userData)
         functions.deletingDeckCard(browser)
-        //test will fail at the end because of but EP-92
-    }
+        //(this is a comment) Test will fail at the end because of bug EP-92
+    }*/
 }
 
