@@ -48,6 +48,8 @@ module.exports = {
 
 //Edit Decks
     penPad: '(//i[@class="fa fa-2x fa-pencil-square-o"])[1]',
+    newDeckName: '//textarea[@placeholder="Enter deck name"]',
+
 
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',

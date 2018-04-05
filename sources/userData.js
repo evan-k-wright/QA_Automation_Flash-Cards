@@ -19,7 +19,7 @@ module.exports = {
     answer: 'A Mac',
 
 //Editing Deck and Card
-    newDeckName: 'Do you know Evan?',
+    deckNameNew: 'Do you know Evan?',
 
 //Subscription
     cardNumber: '4242 4242 4242 4242',

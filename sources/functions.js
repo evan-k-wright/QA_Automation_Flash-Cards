@@ -84,9 +84,9 @@ const editing =(browser, userData) => {
         .useXpath()
         .waitForElementVisible(selectors.penPad, 2000)
         .click(selectors.penPad)
-        .useCss()
-        .clearValue(selectors.deckName)
-        .setValue(selectors.deckName, userData.newDeckName)
+        .waitForElementPresent(selectors.newDeckName, 2000)
+        .clearValue(selectors.newDeckName)
+        .setValue(selectors.newDeckName, userData.deckNameNew)
 }
 
 //EP-73
