@@ -136,8 +136,21 @@ const deletingDeckCard = (browser) => {
         .useXpath()
         .waitForElementVisible(selectors.clickDeck, 2000)
         .click(selectors.clickDeck)
+        .waitForElementVisible(selectors.cardPen, 2000)
+        .click(selectors.cardPen)
+        .click(selectors.cardDelete)
+        .expect.element(selectors.cardLabel).text.to.equal("Cards")
+    browser
+    .waitForElementVisible(selectors.backButton, 2000)
+        .click(selectors.backButton)
+        .waitForElementVisible(selectors.penPad, 2000)
+        .click(selectors.penPad)
+        .pause(1000)
+        .click(selectors.deleteDeck)
+        .waitForElementVisible(selectors.yesButton, 2000)
+        .click(selectors.yesButton)
+        .waitForElementNotVisible(selectors.yesButton, 2000)
 
-        
 }
 
 

@@ -67,6 +67,13 @@ module.exports = {
     correct: '//button[@class="correct"]',
     incorrect: '//button[@class="incorrect"]',
 
+//Deleting card and deck
+    cardDelete: '//button[@class="destructive"]',
+    cardLabel: '//label[@data-bind="text: strings.title"]',
+    backButton: '//i[@data-bind="css: strings.backIcon"]',
+    deleteDeck: '(//button[@class="destructive"])[1]',
+    yesButton: '//button[.="Yes"]',
+
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
