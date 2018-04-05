@@ -132,7 +132,12 @@ const study = (browser) => {
 //EP-72 - test2.js
 const deletingDeckCard = (browser) => {
     browser
+        .click(selectors.decks)
+        .useXpath()
+        .waitForElementVisible(selectors.clickDeck, 2000)
+        .click(selectors.clickDeck)
 
+        
 }
 
 

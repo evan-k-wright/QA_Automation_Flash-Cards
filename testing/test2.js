@@ -30,7 +30,9 @@ module.exports = {
     // },
 
     'EP-72 Deleting Card(s) and Deck(s)': browser => {
+        functions.login(browser, userData)
         functions.deletingDeckCard(browser)
+        
     }
 }
 
