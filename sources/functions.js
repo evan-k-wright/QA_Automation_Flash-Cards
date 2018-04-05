@@ -80,7 +80,13 @@ const addDeck =(browser, userData) => {
 //EP67
 const editing =(browser, userData) => {
     browser
-        
+        .click(selectors.decks)
+        .useXpath()
+        .waitForElementVisible(selectors.penPad, 2000)
+        .click(selectors.penPad)
+        .useCss()
+        .clearValue(selectors.deckName)
+        .setValue(selectors.deckName, userData.newDeckName)
 }
 
 //EP-73
@@ -121,6 +127,7 @@ module.exports = {
     loginLogoutGoogle: loginLogoutGoogle,
     login: login,
     addDeck: addDeck,
+    editing: editing,
     subscribe: subscribe,
     deleteingAccount: deletingAccount,
 }

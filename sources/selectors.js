@@ -46,6 +46,9 @@ module.exports = {
     cardBack: 'textarea[placeholder="Enter card back"]',
     saveCard: 'button[class="primary"]',
 
+//Edit Decks
+    penPad: '(//i[@class="fa fa-2x fa-pencil-square-o"])[1]',
+
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',

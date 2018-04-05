@@ -17,7 +17,8 @@ module.exports = {
 
     'EP-67 Editing Deck(s) and Card(s)': browser => {
         browser
-            
+            functions.login(browser, userData)
+            functions.editing(browser, userData)
 
     },
 

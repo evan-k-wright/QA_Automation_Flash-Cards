@@ -18,6 +18,9 @@ module.exports = {
     question: 'What is my favorite kind of computer?',
     answer: 'A Mac',
 
+//Editing Deck and Card
+    newDeckName: 'Do you know Evan?',
+
 //Subscription
     cardNumber: '4242 4242 4242 4242',
     expDate: '07 18',
