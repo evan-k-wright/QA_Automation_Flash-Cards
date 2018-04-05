@@ -20,6 +20,7 @@ module.exports = {
 
 //Editing Deck and Card
     deckNameNew: 'Do you know Evan?',
+    decay: '15',
 
 //Subscription
     cardNumber: '4242 4242 4242 4242',

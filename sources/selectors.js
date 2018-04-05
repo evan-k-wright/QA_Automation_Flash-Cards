@@ -47,9 +47,10 @@ module.exports = {
     saveCard: 'button[class="primary"]',
 
 //Edit Decks
+    deckTitle: '//label[@data-bind="text: strings.title"]',
     penPad: '(//i[@class="fa fa-2x fa-pencil-square-o"])[1]',
-    newDeckName: '//textarea[@placeholder="Enter deck name"]',
-
+    newDeckName: '//textarea[@rows="1"]',
+    masterDay: '//input[@type="range"]',
 
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',

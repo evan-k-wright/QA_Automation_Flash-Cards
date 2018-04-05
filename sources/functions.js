@@ -82,11 +82,16 @@ const editing =(browser, userData) => {
     browser
         .click(selectors.decks)
         .useXpath()
-        .waitForElementVisible(selectors.penPad, 2000)
+        .waitForElementVisible(selectors.penPad, 5000)
         .click(selectors.penPad)
-        .waitForElementPresent(selectors.newDeckName, 2000)
+        .expect.element(selectors.deckTitle).text.to.equal("Decks")
+    browser
+        .pause(500)
         .clearValue(selectors.newDeckName)
-        .setValue(selectors.newDeckName, userData.deckNameNew)
+        .pause(500)
+        .setValue(selectors.newDeckName, userData.deckNameNew) 
+        .pause(500)
+        .setValue(selectors.masterDay, userData.decay)       
 }
 
 //EP-73
@@ -96,7 +101,7 @@ const subscribe =(browser, userData) => {
         .waitForElementPresent(selectors.upGrade, 3000)
         .click(selectors.upGrade)
         .pause(3000)
-        .setValue(selectors.ccNumber, userData.cardNumber)
+        .click(selectors.masterDay, userData.cardNumber)
 
 
 }
