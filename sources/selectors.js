@@ -59,6 +59,13 @@ module.exports = {
     front: '(//textarea[@rows="1"])[1]',
     back: '(//textarea[@rows="1"])[2]',
     cardSave: '//button[.="Save"]',
+    
+//Study
+    studyButton: '//button[@class="primary study"]',
+    checkDeck: '(//i[@class="fa fa-square-o"])[1]',
+    flip: '//button[@class="flip"]',
+    correct: '//button[@class="correct"]',
+    incorrect: '//button[@class="incorrect"]',
 
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',

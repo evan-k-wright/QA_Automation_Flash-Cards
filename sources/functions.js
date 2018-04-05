@@ -1,7 +1,7 @@
 const userData = require('./userData')
 const selectors = require('./selectors')
 
-//EP-70
+//EP-70 - test1.js
 const googleAdd = (browser, userData) => {
     browser
         .click(selectors.signUp)
@@ -22,6 +22,7 @@ const googleAdd = (browser, userData) => {
         .click(selectors.getStarted)
 }
 
+//EP-65 - test1.js
 const loginLogout = (browser, userData) => {
     browser
     .setValue(selectors.logingEmail, userData.loginEmail)
@@ -31,6 +32,7 @@ const loginLogout = (browser, userData) => {
     .click(selectors.logoutBtton)
 }
 
+//EP-71 - test1.js
 const loginLogoutGoogle = (browser, userData) => {
     browser
         .waitForElementVisible(selectors.loginGoogle, 3000)
@@ -49,7 +51,7 @@ const loginLogoutGoogle = (browser, userData) => {
         .click(selectors.logoutBtton)
 }
 
-//Used for all tests
+//Used for all testing
 const login = (browser, userData) => {
     browser
         .setValue(selectors.logingEmail, userData.loginEmail)
@@ -58,8 +60,8 @@ const login = (browser, userData) => {
         .pause(3000)
 }
 
-//EP-66
-const addDeck =(browser, userData) => {
+//EP-66 - test2.js
+const addDeck = (browser, userData) => {
     browser
         .click(selectors.decks)
         .pause(500)
@@ -77,8 +79,8 @@ const addDeck =(browser, userData) => {
         .click(selectors.saveCard)
 }
 
-//EP-67
-const editing =(browser, userData) => {
+//EP-67 - test2.js
+const editing = (browser, userData) => {
     browser
         .click(selectors.decks)
         .useXpath()
@@ -93,8 +95,8 @@ const editing =(browser, userData) => {
         .click(selectors.save)     
 }
 
-//EP-67
-const ediitngCards =(browser, userData) => {
+//EP-67 - test2.js
+const ediitngCards = (browser, userData) => {
     browser
         .pause(500)
         .click(selectors.clickDeck)
@@ -107,9 +109,35 @@ const ediitngCards =(browser, userData) => {
         .click(selectors.cardSave)
 }
 
+//EP-68 - test2.js
+const study = (browser) => {
+    browser
+        .waitForElementVisible(selectors.decks, 3000)
+        .click(selectors.decks)
+        .useXpath()
+        .waitForElementVisible(selectors.studyButton, 2000)
+        .click(selectors.studyButton)
+        .waitForElementVisible(selectors.checkDeck, 2000)
+        .click(selectors.checkDeck)
+        .click(selectors.studyButton)
+        .waitForElementVisible(selectors.studyButton,2000)
+        .click(selectors.studyButton)
+        .waitForElementVisible(selectors.flip, 2000)
+        .click(selectors.flip)
+        .click(selectors.correct)
+        .click(selectors.flip)
+        .click(selectors.incorrect)
+}
+
+//EP-72 - test2.js
+const deletingDeckCard = (browser) => {
+    browser
+
+}
+
 
 //EP-73
-const subscribe =(browser, userData) => {
+const subscribe = (browser, userData) => {
     browser
         .click(selectors.subscription)
         .waitForElementPresent(selectors.upGrade, 3000)
@@ -121,7 +149,7 @@ const subscribe =(browser, userData) => {
 }
 
 //EP-76
-const deletingAccount =(browser, userData) => {
+const deletingAccount = (browser, userData) => {
     browser
         .click(selectors.settings)
         .waitForElementVisible(selectors.delete, 2000)
@@ -148,6 +176,8 @@ module.exports = {
     addDeck: addDeck,
     editing: editing,
     ediitngCards: ediitngCards,
+    deletingDeckCard: deletingDeckCard,
+    study: study,
     subscribe: subscribe,
     deleteingAccount: deletingAccount,
 }

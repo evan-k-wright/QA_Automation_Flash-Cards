@@ -15,22 +15,22 @@ module.exports = {
     //         functions.addDeck(browser, userData)
     // },
 
-    'EP-67 Editing Deck(s) and Card(s)': browser => {
-        browser
-            functions.login(browser, userData)
-            functions.editing(browser, userData)
-            functions.ediitngCards(browser, userData)
+    // 'EP-67 Editing Deck(s) and Card(s)': browser => {
+    //     browser
+    //         functions.login(browser, userData)
+    //         functions.editing(browser, userData)
+    //         functions.ediitngCards(browser, userData)
 
-    },
-
-    // 'EP-73 Subscribing': browser => {
-    //     functions.login(browser, userData)
-    //     functions.subscribe(browser, userData)
     // },
 
-    /*'EP-76 Deleting Account': browser => {
-        functions.login(browser, userData)
-        functions.deleteingAccount(browser, userData)
-    },*/
+    // 'EP-68 Study': browser => {
+    //     browser
+    //         functions.login(browser, userData)
+    //         functions.study(browser)
+    // },
+
+    'EP-72 Deleting Card(s) and Deck(s)': browser => {
+        functions.deletingDeckCard(browser)
+    }
 }
 
