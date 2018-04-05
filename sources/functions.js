@@ -77,7 +77,7 @@ const addDeck =(browser, userData) => {
         .click(selectors.saveCard)
 }
 
-//EP67
+//EP-67
 const editing =(browser, userData) => {
     browser
         .click(selectors.decks)
@@ -90,9 +90,14 @@ const editing =(browser, userData) => {
         .clearValue(selectors.newDeckName)
         .pause(500)
         .setValue(selectors.newDeckName, userData.deckNameNew) 
-        .pause(500)
-        .setValue(selectors.masterDay, userData.decay)       
+        .click(selectors.save)     
 }
+
+//EP-67
+const ediitngCards =(browser, userData) => {
+    
+}
+
 
 //EP-73
 const subscribe =(browser, userData) => {

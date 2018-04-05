@@ -5,9 +5,9 @@
 
   <testsuite name="test2"
     errors="0" failures="0" hostname="" id="" package="test2" skipped="0"
-    tests="1" time="9.474" timestamp="Thu, 05 Apr 2018 16:45:22 GMT">
+    tests="1" time="8.629" timestamp="Thu, 05 Apr 2018 16:51:11 GMT">
   
-    <testcase name="EP-67 Editing Deck(s) and Card(s)" classname="test2" time="9.474" assertions="2">
+    <testcase name="EP-67 Editing Deck(s) and Card(s)" classname="test2" time="8.629" assertions="2">
 
     
 

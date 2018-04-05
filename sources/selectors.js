@@ -51,7 +51,9 @@ module.exports = {
     penPad: '(//i[@class="fa fa-2x fa-pencil-square-o"])[1]',
     newDeckName: '//textarea[@rows="1"]',
     masterDay: '//input[@type="range"]',
-
+    save: '//button[@data-bind="click: clickSave, disable: saveDisabled, text: strings.save, visible: saveVisible"]',
+    
+    
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
