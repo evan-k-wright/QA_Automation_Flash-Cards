@@ -189,6 +189,12 @@ const settings = (browser, userData) => {
         .setValue(selectors.yourName, userData.myName)
         .waitForElementVisible(selectors.saveName, 2000)
         .click(selectors.saveName)
+        .click(selectors.termsOfUse)
+        .waitForElementVisible(selectors.backButton, 2000)
+        .click(selectors.backButton)
+        .click(selectors.privacyPolicy)
+        .waitForElementVisible(selectors.backButton, 2000)
+        .click(selectors.backButton)
 
 }
 

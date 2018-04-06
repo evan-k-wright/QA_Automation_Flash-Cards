@@ -92,6 +92,9 @@ module.exports = {
     authenticateSettings: '(//button[@class="primary"])[1]',
     yourName: '(//input[@type="text"])[1]',
     saveName: '(//button[@class="primary"])[1]',
+    termsOfUse: '//label[@data-bind="text: strings.termsOfUse"]',
+    
+    privacyPolicy: '//label[@data-bind="text: strings.privacyPolicy"]',
 
 //Deleting Account
     delete: 'button[class="destructive"]',
