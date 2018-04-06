@@ -34,7 +34,7 @@ module.exports = {
 //Home Page
     decks: 'label[data-bind="text: strings.decks"]',
     contactUs: 'label[data-bind="text: strings.contact"]', 
-    contactTitle: 'h1[class="page-title"]',
+    settings: 'label[data-bind="text: strings.settings"]',
 
 //Add deck(s)
     addDeck: 'i[data-bind="css: strings.addIcon"]',
@@ -84,8 +84,16 @@ module.exports = {
     cvc: 'input[autocomplete="cc-csc"]',
     zipCode: 'input[autocomplete="postal-code"]',
 
+//Contact US
+    contactTitle: 'h1[class="page-title"]',
+
+//Settings
+    settingsPen: 'i[class="fa fa-2x fa-pencil-square-o"]',
+    authenticateSettings: '(//button[@class="primary"])[1]',
+    yourName: '(//input[@type="text"])[1]',
+    saveName: '(//button[@class="primary"])[1]',
+
 //Deleting Account
-    settings: 'label[data-bind="text: strings.settings"]',
     delete: 'button[class="destructive"]',
     authenticate: 'button[class="primary"]',
     password2: 'input[data-bind="attr: { placeholder: strings.passwordPlaceholder }, value: password"]',

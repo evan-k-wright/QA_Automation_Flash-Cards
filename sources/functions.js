@@ -171,6 +171,27 @@ const contact = (browser) => {
         .expect.element(selectors.contactTitle).text.to.equal("Contact US")
 }
 
+//EP-75
+const settings = (browser, userData) => {
+    browser
+        .click(selectors.settings)
+        .waitForElementVisible(selectors.settingsPen, 2000)
+        .click(selectors.settingsPen)
+        .useXpath()
+        .click(selectors.authenticateSettings)
+        .useCss()
+        .waitForElementVisible(selectors.password2, 2000)
+        .setValue(selectors.password2, userData.loginPassword)
+        .click(selectors.reauthenticate)
+        .waitForElementVisible(selectors.settingsPen, 2000)
+        .click(selectors.settingsPen)
+        .useXpath()
+        .setValue(selectors.yourName, userData.myName)
+        .waitForElementVisible(selectors.saveName, 2000)
+        .click(selectors.saveName)
+
+}
+
 //EP-76
 const deletingAccount = (browser, userData) => {
     browser
@@ -203,5 +224,6 @@ module.exports = {
     study: study,
     subscribe: subscribe,
     contact: contact,
+    settings: settings,
     deleteingAccount: deletingAccount,
 }

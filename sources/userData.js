@@ -29,4 +29,7 @@ module.exports = {
     expDate: '07 18',
     cvcNumber: '801',
     zipCode: '84101',
+
+//Settings
+    myName: 'Evan Wright'
 }
