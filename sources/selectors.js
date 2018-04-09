@@ -39,6 +39,7 @@ module.exports = {
 //Add deck(s)
     addDeck: 'i[data-bind="css: strings.addIcon"]',
     deckName: 'textarea[placeholder="Enter deck name"]',
+    dayMastery: 'input[type="range"]',
     saveDeck: 'button[class="primary"]',
 
 //Adding card(s)
@@ -79,7 +80,7 @@ module.exports = {
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
     upGrade: 'button[data-bind="click: clickUpgrade, disable: upgradeDisabled, text: strings.upgrade"]',
-    ccNumber: 'input[name="cardnumber"]',
+    ccNumber: 'input[autocomplete="cc-number"]',
     date: 'input[autocomplete="cc-exp"]',
     cvc: 'input[autocomplete="cc-csc"]',
     zipCode: 'input[autocomplete="postal-code"]',

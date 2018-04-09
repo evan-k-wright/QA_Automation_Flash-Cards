@@ -67,7 +67,7 @@ const addDeck = (browser, userData) => {
         .pause(500)
         .click(selectors.addDeck)
         .setValue(selectors.deckName, userData.deckName)
-        .pause(500)
+        .pause(2000)
         .click(selectors.saveDeck)
         .pause(500)
         .click(selectors.cardAdd)
@@ -158,10 +158,10 @@ const deletingDeckCard = (browser) => {
 const subscribe = (browser, userData) => {
     browser
         .click(selectors.subscription)
-        .waitForElementPresent(selectors.upGrade, 3000)
+        .waitForElementVisible(selectors.upGrade, 3000)
         .click(selectors.upGrade)
         .pause(3000)
-        .click(selectors.masterDay, userData.cardNumber)
+        .setValue(selectors.ccNumber, userData.cardNumber)
 }
 
 //EP-76 - test3.js

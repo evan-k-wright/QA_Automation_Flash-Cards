@@ -21,10 +21,10 @@ module.exports = {
         //(this is a comment) Test will fail at the end becuase of bug EP-97
     }*/
 
-    'EP-75 Settings': browser => {
-        functions.login(browser, userData)
-        functions.settings(browser, userData)
-    }
+    // 'EP-75 Settings': browser => {
+    //     functions.login(browser, userData)
+    //     functions.settings(browser, userData)
+    // }
 
     /*'EP-76 Deleting Account': browser => {
         functions.login(browser, userData)
