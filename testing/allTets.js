@@ -9,14 +9,32 @@ module.exports = {
     after: browser => {
         browser
     },
-'Login': browser => {
-    functions.login(browser, userData)
-},
 
-'Add deck and card': browser => {
-    functions.addDeck(browser, userData)
-},
+    'Login': browser => {
+        functions.login(browser, userData)
+    },
 
+    'Add deck and card': browser => {
+        functions.addDeck(browser, userData)
+    },
 
+    'Editing deck': browser => {
+        functions.editing(browser, userData)
+    },
 
+    'Editing Cards': browser => {
+        functions.editingCards(browser, userData)
+    },
+
+    'Study': browser => {
+        functions.study(browser)
+    },
+
+    'Deleing Card and Deck': browser => {
+        functions.deletingDeckCard(browser)
+    },
+
+    // 'Conact US': browser => {
+    //     functions.contact(browser)
+    // }
 }

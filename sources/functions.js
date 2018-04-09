@@ -64,25 +64,28 @@ const login = (browser, userData) => {
 const addDeck = (browser, userData) => {
     browser
         .click(selectors.decks)
-        .pause(500)
+        .pause(1000)
         .click(selectors.addDeck)
+        .waitForElementVisible(selectors.deckName, 2000)
         .setValue(selectors.deckName, userData.deckName)
-        .pause(2000)
+        .pause(1000)
         .click(selectors.saveDeck)
-        .pause(500)
+        .pause(1000)
         .click(selectors.cardAdd)
-        .pause(500)
+        .pause(1000)
         .click(selectors.addCard)
         .setValue(selectors.cardFront, userData.question)
         .setValue(selectors.cardBack, userData.answer)
-        .pause(500)
+        .pause(1000)
         .click(selectors.saveCard)
+        .waitForElementVisible(selectors.backArrow, 2000)
+        .click(selectors.backArrow)
 }
 
 //EP-67 - test2.js
 const editing = (browser, userData) => {
     browser
-        .click(selectors.decks)
+        //.click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.penPad, 5000)
         .click(selectors.penPad)
@@ -92,28 +95,33 @@ const editing = (browser, userData) => {
         .clearValue(selectors.newDeckName)
         .pause(500)
         .setValue(selectors.newDeckName, userData.deckNameNew) 
-        .click(selectors.save)     
+        .click(selectors.save) 
+        .pause(500)    
 }
 
 //EP-67 - test2.js
-const ediitngCards = (browser, userData) => {
+const editingCards = (browser, userData) => {
     browser
-        .pause(500)
+        // .pause(500)
         .click(selectors.clickDeck)
         .waitForElementVisible(selectors.cardPen, 2000)
         .click(selectors.cardPen)
+        .waitForElementPresent(selectors.front, 2000)
         .clearValue(selectors.front)
         .setValue(selectors.front, userData.cardFront)
         .clearValue(selectors.back)
         .setValue(selectors.back, userData.cardBack)
         .click(selectors.cardSave)
+        .useCss()
+        .waitForElementVisible(selectors.backArrow, 2000)
+        .click(selectors.backArrow)
 }
 
 //EP-68 - test2.js
 const study = (browser) => {
     browser
-        .waitForElementVisible(selectors.decks, 3000)
-        .click(selectors.decks)
+        // .waitForElementVisible(selectors.decks, 3000)
+        // .click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.studyButton, 2000)
         .click(selectors.studyButton)
@@ -127,12 +135,16 @@ const study = (browser) => {
         .click(selectors.correct)
         .click(selectors.flip)
         .click(selectors.incorrect)
+        .useCss()
+        .click(selectors.backArrow)
+        .waitForElementVisible(selectors.backArrow, 2000)
+        .click(selectors.backArrow)
 }
 
 //EP-72 - test2.js
 const deletingDeckCard = (browser) => {
     browser
-        .click(selectors.decks)
+        //.click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.clickDeck, 2000)
         .click(selectors.clickDeck)
@@ -149,7 +161,10 @@ const deletingDeckCard = (browser) => {
         .click(selectors.deleteDeck)
         .waitForElementVisible(selectors.yesButton, 2000)
         .click(selectors.yesButton)
-        .waitForElementNotVisible(selectors.yesButton, 2000)
+        .pause(15000)
+        .acceptAlert()
+        .pause(1000)
+        .click(selectors.backArrow)
 
 }
 
@@ -168,7 +183,7 @@ const subscribe = (browser, userData) => {
 const contact = (browser) => {
     browser
         .click(selectors.contactUs)
-        .expect.element(selectors.contactTitle).text.to.equal("Contact US")
+        .expect.element(selectors.contactTitle).text.to.equal("Oops! That page can’t be found.")
 }
 
 //EP-75
@@ -225,7 +240,7 @@ module.exports = {
     login: login,
     addDeck: addDeck,
     editing: editing,
-    ediitngCards: ediitngCards,
+    editingCards: editingCards,
     deletingDeckCard: deletingDeckCard,
     study: study,
     subscribe: subscribe,

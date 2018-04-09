@@ -31,10 +31,11 @@ module.exports = {
     gmailPassword: 'input[type="password"]',
     nextButton: '(//span[@class="RveJvd snByac"])[1]',
 
-//Home Page
+//Home Page and stuff
     decks: 'label[data-bind="text: strings.decks"]',
     contactUs: 'label[data-bind="text: strings.contact"]', 
     settings: 'label[data-bind="text: strings.settings"]',
+    backArrow: 'i[data-bind="css: strings.backIcon"]',
 
 //Add deck(s)
     addDeck: 'i[data-bind="css: strings.addIcon"]',
@@ -60,7 +61,7 @@ module.exports = {
     clickDeck: '(//div[@class="col-12-12"])[1]',
     cardPen: '//i[@class="fa fa-2x fa-pencil-square-o"]',
     front: '(//textarea[@rows="1"])[1]',
-    back: '(//textarea[@rows="1"])[2]',
+    back: '//textarea[@placeholder="Enter card back"]',
     cardSave: '//button[.="Save"]',
     
 //Study
