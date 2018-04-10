@@ -64,6 +64,11 @@ module.exports = {
     back: '//textarea[@placeholder="Enter card back"]',
     cardSave: '//button[.="Save"]',
     
+//Search
+    search: 'input[placeholder="Search"]',
+    frontOfCard: 'pre[data-bind="text: front.content, visible: edit() === false"]',
+    backOfCard: 'pre[data-bind="text: back.content, visible: edit() === false"]',
+
 //Study
     studyButton: '//button[@class="primary study"]',
     checkDeck: '(//i[@class="fa fa-square-o"])[1]',
@@ -95,7 +100,6 @@ module.exports = {
     yourName: '(//input[@type="text"])[1]',
     saveName: '(//button[@class="primary"])[1]',
     termsOfUse: '//label[@data-bind="text: strings.termsOfUse"]',
-    
     privacyPolicy: '//label[@data-bind="text: strings.privacyPolicy"]',
 
 //Deleting Account

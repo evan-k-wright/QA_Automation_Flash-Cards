@@ -66,7 +66,7 @@ const addDeck = (browser, userData) => {
         .click(selectors.decks)
         .pause(1000)
         .click(selectors.addDeck)
-        .waitForElementVisible(selectors.deckName, 2000)
+        .waitForElementVisible(selectors.deckName, 5000)
         .setValue(selectors.deckName, userData.deckName)
         .pause(1000)
         .click(selectors.saveDeck)
@@ -78,7 +78,14 @@ const addDeck = (browser, userData) => {
         .setValue(selectors.cardBack, userData.answer)
         .pause(1000)
         .click(selectors.saveCard)
-        .waitForElementVisible(selectors.backArrow, 2000)
+        .waitForElementVisible(selectors.addCard, 5000)
+        .click(selectors.addCard)
+        .pause(1000)
+        .setValue(selectors.cardFront, userData.questionTwo)
+        .setValue(selectors.cardBack, userData.answerTwo)
+        .waitForElementVisible(selectors.saveCard, 5000)
+        .click(selectors.saveCard)
+        .waitForElementVisible(selectors.backArrow, 5000)
         .click(selectors.backArrow)
 }
 
@@ -104,17 +111,30 @@ const editingCards = (browser, userData) => {
     browser
         // .pause(500)
         .click(selectors.clickDeck)
-        .waitForElementVisible(selectors.cardPen, 2000)
+        .waitForElementVisible(selectors.cardPen, 5000)
         .click(selectors.cardPen)
-        .waitForElementPresent(selectors.front, 2000)
+        .waitForElementPresent(selectors.front, 5000)
         .clearValue(selectors.front)
         .setValue(selectors.front, userData.cardFront)
         .clearValue(selectors.back)
         .setValue(selectors.back, userData.cardBack)
         .click(selectors.cardSave)
         .useCss()
-        .waitForElementVisible(selectors.backArrow, 2000)
+        .waitForElementVisible(selectors.backArrow, 5000)
         .click(selectors.backArrow)
+}
+
+//EP-102 - test2.js
+const searchBar = (browser, userData) => {
+    browser
+        .click(selectors.decks)
+        .pause(1000)
+        .click(selectors.clickDeck)
+        .waitForElementVisible(selectors.search, 5000)
+        .setValue(selectors.search, userData.searchCard)
+        .assert.containsText(selectors.frontOfCard, userData.frontCard)
+        .assert.containsText(selectors.backOfCard, userData.backCard)
+
 }
 
 //EP-68 - test2.js
@@ -123,21 +143,21 @@ const study = (browser) => {
         // .waitForElementVisible(selectors.decks, 3000)
         // .click(selectors.decks)
         .useXpath()
-        .waitForElementVisible(selectors.studyButton, 2000)
+        .waitForElementVisible(selectors.studyButton, 5000)
         .click(selectors.studyButton)
-        .waitForElementVisible(selectors.checkDeck, 2000)
+        .waitForElementVisible(selectors.checkDeck, 5000)
         .click(selectors.checkDeck)
         .click(selectors.studyButton)
-        .waitForElementVisible(selectors.studyButton,2000)
+        .waitForElementVisible(selectors.studyButton,5000)
         .click(selectors.studyButton)
-        .waitForElementVisible(selectors.flip, 2000)
+        .waitForElementVisible(selectors.flip, 5000)
         .click(selectors.flip)
         .click(selectors.correct)
         .click(selectors.flip)
         .click(selectors.incorrect)
         .useCss()
         .click(selectors.backArrow)
-        .waitForElementVisible(selectors.backArrow, 2000)
+        .waitForElementVisible(selectors.backArrow, 5000)
         .click(selectors.backArrow)
 }
 
@@ -146,27 +166,28 @@ const deletingDeckCard = (browser) => {
     browser
         //.click(selectors.decks)
         .useXpath()
-        .waitForElementVisible(selectors.clickDeck, 2000)
+        .waitForElementVisible(selectors.clickDeck, 5000)
         .click(selectors.clickDeck)
         .pause(1000)
         .click(selectors.cardPen)
         .click(selectors.cardDelete)
         .expect.element(selectors.cardLabel).text.to.equal("Cards")
     browser
-    .waitForElementVisible(selectors.backButton, 2000)
+    .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
-        .waitForElementVisible(selectors.penPad, 2000)
+        .waitForElementVisible(selectors.penPad, 5000)
         .click(selectors.penPad)
         .pause(1000)
         .click(selectors.deleteDeck)
         .pause(1000)
         .click(selectors.yesButton)
         .pause(15000)
+        //Must wait so the alert will pop up.
         .acceptAlert()
         .pause(500)
         .useCss()
         .click(selectors.backArrow)
-        .waitForElementVisible(selectors.contactUs, 2000)
+        .waitForElementVisible(selectors.contactUs, 5000)
 
 }
 
@@ -175,7 +196,7 @@ const deletingDeckCard = (browser) => {
 const subscribe = (browser, userData) => {
     browser
         .click(selectors.subscription)
-        .waitForElementVisible(selectors.upGrade, 3000)
+        .waitForElementVisible(selectors.upGrade, 5000)
         .click(selectors.upGrade)
         .pause(3000)
         .setValue(selectors.ccNumber, userData.cardNumber)
@@ -193,27 +214,28 @@ const contact = (browser) => {
 //EP-75
 const settings = (browser, userData) => {
     browser
-        .waitForElementVisible(selectors.settings, 2000)
+        .waitForElementVisible(selectors.settings, 5000)
         .click(selectors.settings)
-        .waitForElementVisible(selectors.settingsPen, 2000)
+        .waitForElementVisible(selectors.settingsPen, 5000)
         .click(selectors.settingsPen)
         .useXpath()
         .click(selectors.authenticateSettings)
         .useCss()
-        .waitForElementVisible(selectors.password2, 2000)
+        .waitForElementVisible(selectors.password2, 5000)
         .setValue(selectors.password2, userData.loginPassword)
         .click(selectors.reauthenticate)
-        .waitForElementVisible(selectors.settingsPen, 2000)
+        .waitForElementVisible(selectors.settingsPen, 5000)
         .click(selectors.settingsPen)
         .useXpath()
         .setValue(selectors.yourName, userData.myName)
-        .waitForElementVisible(selectors.saveName, 2000)
+        .waitForElementVisible(selectors.saveName, 5000)
         .click(selectors.saveName)
         .click(selectors.termsOfUse)
-        .waitForElementVisible(selectors.backButton, 2000)
+        .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
+        .waitForElementVisible(selectors.privacyPolicy, 5000)
         .click(selectors.privacyPolicy)
-        .waitForElementVisible(selectors.backButton, 2000)
+        .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
 
 }
@@ -221,8 +243,9 @@ const settings = (browser, userData) => {
 //EP-76
 const deletingAccount = (browser) => {
     browser
-        //.click(selectors.settings)
-        .waitForElementVisible(selectors.delete, 2000)
+        // .waitForElementVisible(selectors.settings, 2000)
+        // .click(selectors.settings)
+        .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
         .click(selectors.authenticate)
         .pause(1000)
@@ -246,6 +269,7 @@ module.exports = {
     addDeck: addDeck,
     editing: editing,
     editingCards: editingCards,
+    searchBar: searchBar,
     deletingDeckCard: deletingDeckCard,
     study: study,
     subscribe: subscribe,

@@ -17,13 +17,19 @@ module.exports = {
 //Card(s) questions and answers
     question: 'What is my favorite kind of computer?',
     answer: 'A Mac',
+    questionTwo: '102',
+    answerTwo: '102',
 
 //Editing Deck and Card
-    deckNameNew: 'Do you know Evan?',
-    decay: '15',
-    cardFront: 'When was I born?',
-    cardBack: 'June 10, 1992',
+    deckNameNew: 'Testing1',
+    cardFront: '101',
+    cardBack: '101',
 
+//Search Bar
+    searchCard: '101',
+    frontCard: '101',
+    backCard: '101',
+    
 //Subscription
     cardNumber: '4242 4242 4242 4242',
     expDate: '07 18',
