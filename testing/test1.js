@@ -1,15 +1,15 @@
-const selectors = require('../sources/selectors')
-const functions = require('../sources/functions')
-const userData = require('../sources/userData')
+// const selectors = require('../sources/selectors')
+// const functions = require('../sources/functions')
+// const userData = require('../sources/userData')
 
-module.exports = {
-    beforeEach: browser => {
-        browser.url('https://cards-beta.devclock.com/login')
-    },
-    after: browser => {
-        browser
-    },
-//   'EP-64 Creating An Account': browser => {
+// module.exports = {
+//     beforeEach: browser => {
+//         browser.url('https://cards-beta.devclock.com/login')
+//     },
+//     after: browser => {
+//         browser
+//     },
+// //   'EP-64 Creating An Account': browser => {
 //         browser
 //             .waitForElementPresent('body', 3000)
 //             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
@@ -38,4 +38,4 @@ module.exports = {
     // 'EP-71 Login and Logout With Google Account': browser => {
     //     functions.loginLogoutGoogle(browser, userData)
     // },
-}
+//}

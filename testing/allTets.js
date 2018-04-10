@@ -34,7 +34,9 @@ module.exports = {
         functions.deletingDeckCard(browser)
     },
 
-    // 'Conact US': browser => {
-    //     functions.contact(browser)
-    // }
+    'Conact US': browser => {
+        functions.contact(browser)
+    },
+
+    
 }
