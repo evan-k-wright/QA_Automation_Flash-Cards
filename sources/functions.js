@@ -159,7 +159,7 @@ const deletingDeckCard = (browser) => {
         .click(selectors.penPad)
         .pause(1000)
         .click(selectors.deleteDeck)
-        .waitForElementVisible(selectors.yesButton, 2000)
+        .pause(1000)
         .click(selectors.yesButton)
         .pause(15000)
         .acceptAlert()
@@ -219,9 +219,9 @@ const settings = (browser, userData) => {
 }
 
 //EP-76
-const deletingAccount = (browser, userData) => {
+const deletingAccount = (browser) => {
     browser
-        .click(selectors.settings)
+        //.click(selectors.settings)
         .waitForElementVisible(selectors.delete, 2000)
         .click(selectors.delete)
         .click(selectors.authenticate)
@@ -234,7 +234,7 @@ const deletingAccount = (browser, userData) => {
         .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 10000)
         .useCss()
         .click(selectors.delete)
-        .waitForElementNotPresent(selectors.notDelete, 2000)
+        .assert.visible(selectors.notDelete)
         
 }
 
