@@ -38,5 +38,7 @@ module.exports = {
         functions.contact(browser)
     },
 
-    
+    'Settings': browser => {
+        functions.settings(browser, userData)
+    },
 }

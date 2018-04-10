@@ -186,11 +186,14 @@ const contact = (browser) => {
     browser
         .click(selectors.contactUs)
         .expect.element(selectors.contactTitle).text.to.equal("Oops! That page can’t be found.")
+    browser
+        .back()
 }
 
 //EP-75
 const settings = (browser, userData) => {
     browser
+        .waitForElementVisible(selectors.settings, 2000)
         .click(selectors.settings)
         .waitForElementVisible(selectors.settingsPen, 2000)
         .click(selectors.settingsPen)
