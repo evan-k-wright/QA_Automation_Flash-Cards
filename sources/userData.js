@@ -15,20 +15,20 @@ module.exports = {
     deckName: 'About Me',
 
 //Card(s) questions and answers
-    question: 'What is my favorite kind of computer?',
-    answer: 'A Mac',
-    questionTwo: '102',
-    answerTwo: '102',
+    question: 'Where is the Jazz court located?',
+    answer: 'Salt Lake City, UT',
+    questionTwo: 'Who is Utahs basketball team?',
+    answerTwo: 'The Jazz',
 
 //Editing Deck and Card
-    deckNameNew: 'Testing1',
-    cardFront: '101',
-    cardBack: '101',
+    deckNameNew: 'Utah Sports',
+    cardFront: 'What is the Jazz court called?',
+    cardBack: 'VivintSmart Home Arena',
 
 //Search Bar
-    searchCard: '101',
-    frontCard: '101',
-    backCard: '101',
+    searchCard: 'Who is Utahs basketball team?',
+    frontCard: 'Who is Utahs basketball team?',
+    backCard: 'The Jazz',
     
 //Subscription
     cardNumber: '4242 4242 4242 4242',
