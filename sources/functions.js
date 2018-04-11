@@ -237,7 +237,7 @@ const settings = (browser, userData) => {
         .click(selectors.termsOfUse)
         .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
-        .waitForElementVisible(selectors.privacyPolicy, 5000)
+        .pause(1000)
         .click(selectors.privacyPolicy)
         .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
@@ -247,8 +247,9 @@ const settings = (browser, userData) => {
 //EP-76
 const deletingAccount = (browser) => {
     browser
-     // .waitForElementVisible(selectors.settings, 2000)
+     //.waitForElementVisible(selectors.settings, 2000)
     // .click(selectors.settings)
+        .useCss()
         .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
         .click(selectors.authenticate)
