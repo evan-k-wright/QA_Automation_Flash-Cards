@@ -26,27 +26,27 @@ module.exports = {
         functions.editingCards(browser, userData)
     },
 
-    // 'Search Cards': browser => {
-    //     functions.searchBar(browser, userData)
-    // },
+    'Search Cards': browser => {
+        functions.searchBar(browser, userData)
+    },
 
-    // 'Study': browser => {
-    //     functions.study(browser)
-    // },
+    'Study': browser => {
+        functions.study(browser)
+    },
 
-    // 'Deleing Card and Deck': browser => {
-    //     functions.deletingDeckCard(browser)
-    // },
+    'Deleing Card and Deck': browser => {
+        functions.deletingDeckCard(browser)
+    },
 
-    // 'Conact US': browser => {
-    //     functions.contact(browser)
-    // },
+    'Conact US': browser => {
+        functions.contact(browser)
+    },
 
-    // 'Settings': browser => {
-    //     functions.settings(browser, userData)
-    // },
+    'Settings': browser => {
+        functions.settings(browser, userData)
+    },
 
-    // 'Deleting Account': browser => {
-    //     functions.deleteingAccount(browser)
-    // },
+    'Deleting Account': browser => {
+        functions.deleteingAccount(browser)
+    },
 }

@@ -22,11 +22,11 @@ module.exports = {
 
 //Editing Deck and Card
     deckNameNew: 'Utah Sports',
-    cardFront: 'What is the Jazz court called?',
-    cardBack: 'VivintSmart Home Arena',
+    cardFront: 'Who is the head coach for Utahs basketball team?',
+    cardBack: 'Quin Snyder',
 
 //Search Bar
-    searchCard: 'Who is Utahs basketball team?',
+    searchCard: 'Who is Utahs basketball team',
     frontCard: 'Who is Utahs basketball team?',
     backCard: 'The Jazz',
     

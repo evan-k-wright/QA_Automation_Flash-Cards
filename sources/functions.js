@@ -57,12 +57,12 @@ const login = (browser, userData) => {
         .setValue(selectors.logingEmail, userData.loginEmail)
         .setValue(selectors.loginPassword, userData.loginPassword)
         .click(selectors.loginButton)
-        .pause(3000)
 }
 
 //EP-66 - test2.js
 const addDeck = (browser, userData) => {
     browser
+        .waitForElementVisible(selectors.decks, 5000)
         .click(selectors.decks)
         .pause(1000)
         .click(selectors.addDeck)
@@ -92,24 +92,24 @@ const addDeck = (browser, userData) => {
 //EP-67 - test2.js
 const editing = (browser, userData) => {
     browser
-        //.click(selectors.decks)
+    //.click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.penPad, 5000)
         .click(selectors.penPad)
         .expect.element(selectors.deckTitle).text.to.equal("Decks")
     browser
-        .pause(500)
+        .pause(1000)
         .clearValue(selectors.newDeckName)
-        .pause(500)
+        .pause(1000)
         .setValue(selectors.newDeckName, userData.deckNameNew) 
         .click(selectors.save) 
-        .pause(500)    
+        .pause(1000)    
 }
 
 //EP-67 - test2.js
 const editingCards = (browser, userData) => {
     browser
-        // .pause(500)
+    // .pause(500)
         .click(selectors.clickDeck)
         .waitForElementVisible(selectors.cardPen, 5000)
         .click(selectors.cardPen)
@@ -119,31 +119,33 @@ const editingCards = (browser, userData) => {
         .clearValue(selectors.back)
         .setValue(selectors.back, userData.cardBack)
         .click(selectors.cardSave)
-        .useCss()
-        .waitForElementVisible(selectors.backArrow, 5000)
-        .click(selectors.backArrow)
+    // .useCss()
+    // .waitForElementVisible(selectors.backArrow, 5000)
+    // .click(selectors.backArrow)
 }
 
 //EP-102 - test2.js
 const searchBar = (browser, userData) => {
     browser
-        .click(selectors.decks)
-        .useXpath()
-        .waitForElementVisible(selectors.clickDeck, 5000)
-        .click(selectors.clickDeck)
+    // .click(selectors.decks)
+    // .useXpath()
+    // .waitForElementVisible(selectors.clickDeck, 5000)
+    // .click(selectors.clickDeck)
         .useCss()
         .waitForElementVisible(selectors.search, 5000)
         .setValue(selectors.search, userData.searchCard)
+        .pause(1000)
         .assert.containsText(selectors.frontOfCard, userData.frontCard)
         .assert.containsText(selectors.backOfCard, userData.backCard)
-
+        .waitForElementVisible(selectors.backArrow, 5000)
+        .click(selectors.backArrow)
 }
 
 //EP-68 - test2.js
 const study = (browser) => {
     browser
-        // .waitForElementVisible(selectors.decks, 3000)
-        // .click(selectors.decks)
+    // .waitForElementVisible(selectors.decks, 3000)
+    // .click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.studyButton, 5000)
         .click(selectors.studyButton)
@@ -166,7 +168,7 @@ const study = (browser) => {
 //EP-72 - test2.js
 const deletingDeckCard = (browser) => {
     browser
-        //.click(selectors.decks)
+    //.click(selectors.decks)
         .useXpath()
         .waitForElementVisible(selectors.clickDeck, 5000)
         .click(selectors.clickDeck)
@@ -184,9 +186,9 @@ const deletingDeckCard = (browser) => {
         .pause(1000)
         .click(selectors.yesButton)
         .pause(15000)
-        //Must wait so the alert will pop up.
+            //Must wait so the alert will pop up.
         .acceptAlert()
-        .pause(500)
+        .pause(1000)
         .useCss()
         .click(selectors.backArrow)
         .waitForElementVisible(selectors.contactUs, 5000)
@@ -245,8 +247,8 @@ const settings = (browser, userData) => {
 //EP-76
 const deletingAccount = (browser) => {
     browser
-        // .waitForElementVisible(selectors.settings, 2000)
-        // .click(selectors.settings)
+     // .waitForElementVisible(selectors.settings, 2000)
+    // .click(selectors.settings)
         .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
         .click(selectors.authenticate)
