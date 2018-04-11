@@ -23,11 +23,11 @@ module.exports = {
 
     // },
 
-    'EP-102 Search Cards': browser => {
-        functions.login(browser, userData)
-        functions.searchBar(browser, userData)
+    // 'EP-102 Search Cards': browser => {
+    //     functions.login(browser, userData)
+    //     functions.searchBar(browser, userData)
         
-    },
+    // },
 
     // 'EP-68 Study': browser => {
     //     browser

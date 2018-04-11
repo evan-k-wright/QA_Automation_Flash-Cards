@@ -1,48 +1,52 @@
-// const selectors = require('../sources/selectors')
-// const functions = require('../sources/functions')
-// const userData = require('../sources/userData')
+const selectors = require('../sources/selectors')
+const functions = require('../sources/functions')
+const userData = require('../sources/userData')
 
-// module.exports = {
-//     before: browser => {
-//         browser.url('https://cards-beta.devclock.com/login')
-//     },
-//     after: browser => {
-//         browser
-//     },
+module.exports = {
+    before: browser => {
+        browser.url('https://cards-beta.devclock.com/login')
+    },
+    after: browser => {
+        browser
+    },
 
-//     'Login': browser => {
-//         functions.login(browser, userData)
-//     },
+    'Login': browser => {
+        functions.login(browser, userData)
+    },
 
-//     'Add deck and card': browser => {
-//         functions.addDeck(browser, userData)
-//     },
+    'Add deck and card': browser => {
+        functions.addDeck(browser, userData)
+    },
 
-//     'Editing deck': browser => {
-//         functions.editing(browser, userData)
-//     },
+    'Editing deck': browser => {
+        functions.editing(browser, userData)
+    },
 
-//     'Editing Cards': browser => {
-//         functions.editingCards(browser, userData)
-//     },
+    'Editing Cards': browser => {
+        functions.editingCards(browser, userData)
+    },
 
-//     'Study': browser => {
-//         functions.study(browser)
-//     },
+    // 'Search Cards': browser => {
+    //     functions.searchBar(browser, userData)
+    // },
 
-//     'Deleing Card and Deck': browser => {
-//         functions.deletingDeckCard(browser)
-//     },
+    // 'Study': browser => {
+    //     functions.study(browser)
+    // },
 
-//     'Conact US': browser => {
-//         functions.contact(browser)
-//     },
+    // 'Deleing Card and Deck': browser => {
+    //     functions.deletingDeckCard(browser)
+    // },
 
-//     'Settings': browser => {
-//         functions.settings(browser, userData)
-//     },
+    // 'Conact US': browser => {
+    //     functions.contact(browser)
+    // },
 
-//     'Deleting Account': browser => {
-//         functions.deleteingAccount(browser)
-//     },
-//}
+    // 'Settings': browser => {
+    //     functions.settings(browser, userData)
+    // },
+
+    // 'Deleting Account': browser => {
+    //     functions.deleteingAccount(browser)
+    // },
+}

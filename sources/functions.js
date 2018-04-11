@@ -128,8 +128,10 @@ const editingCards = (browser, userData) => {
 const searchBar = (browser, userData) => {
     browser
         .click(selectors.decks)
-        .pause(1000)
+        .useXpath()
+        .waitForElementVisible(selectors.clickDeck, 5000)
         .click(selectors.clickDeck)
+        .useCss()
         .waitForElementVisible(selectors.search, 5000)
         .setValue(selectors.search, userData.searchCard)
         .assert.containsText(selectors.frontOfCard, userData.frontCard)
