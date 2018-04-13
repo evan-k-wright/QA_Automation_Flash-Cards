@@ -263,11 +263,12 @@ const deletingAccount = (browser) => {
         //.getLocationInView(selectors.delete)
         .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
-        .pause(5000)
         .useXpath()
         .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 10000)
         .useCss()
-        .assert.visible(selectors.notDelete)
+        .click(selectors.backArrow)
+        .waitForElementVisible(selectors.logoutBtton, 5000)
+        .click(selectors.logoutBtton)
         
 }
 

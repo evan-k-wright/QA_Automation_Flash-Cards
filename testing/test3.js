@@ -26,9 +26,9 @@
     //     functions.settings(browser, userData)
     // }
 
-    /*'EP-76 Deleting Account': browser => {
-        functions.login(browser, userData)
-        functions.deleteingAccount(browser, userData)
+    //'EP-76 Deleting Account': browser => {
+        //functions.login(browser, userData)
+        //functions.deleteingAccount(browser, userData)
         //(this is a comment) Test will fail at the end becuse of bug EP-100
-    },*/
+    //},
 //}
