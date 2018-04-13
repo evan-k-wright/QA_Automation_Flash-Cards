@@ -188,7 +188,6 @@ const deletingDeckCard = (browser) => {
         .pause(1000)
         .click(selectors.yesButton)
         .pause(500)
-            //Must wait so the alert will pop up.
         .acceptAlert()
         .pause(500)
         .refresh()
@@ -196,7 +195,6 @@ const deletingDeckCard = (browser) => {
         .useCss()
         .click(selectors.backArrow)
         .waitForElementVisible(selectors.contactUs, 5000)
-        .pause(5000)
 
 }
 
@@ -262,12 +260,13 @@ const deletingAccount = (browser) => {
         .pause(1000)
         .setValue(selectors.password2, userData.loginPassword)
         .click(selectors.reauthenticate)
-        .pause(1000)
+        //.getLocationInView(selectors.delete)
+        .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
+        .pause(5000)
         .useXpath()
         .waitForElementVisible('//label[.="Are you sure you want to delete your account? Your data will be PERMANENTLY deleted and cannot be recovered."]', 10000)
         .useCss()
-        .click(selectors.delete)
         .assert.visible(selectors.notDelete)
         
 }
