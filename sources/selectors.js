@@ -82,6 +82,7 @@ module.exports = {
     backButton: '//i[@data-bind="css: strings.backIcon"]',
     deleteDeck: '(//button[@class="destructive"])[1]',
     yesButton: '//button[.="Yes"]',
+    trashCan: '//i[@data-bind="click: $parent.clickDeleteUser"]',
 
 //Subscribing
     subscription: 'label[data-bind="text: strings.subscription"]',
@@ -100,7 +101,7 @@ module.exports = {
     yourName: '(//input[@type="text"])[1]',
     saveName: '(//button[@class="primary"])[1]',
     termsOfUse: '//label[@data-bind="text: strings.termsOfUse"]',
-    privacyPolicy: '//label[@data-bind="text: strings.privacyPolicy"]',
+    privacyPolicy: '//label[.="Privacy Policy"]',
 
 //Deleting Account
     delete: 'button[class="destructive"]',

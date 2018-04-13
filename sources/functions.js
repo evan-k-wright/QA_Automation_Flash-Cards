@@ -181,17 +181,22 @@ const deletingDeckCard = (browser) => {
         .click(selectors.backButton)
         .waitForElementVisible(selectors.penPad, 5000)
         .click(selectors.penPad)
+        .waitForElementVisible(selectors.trashCan, 5000)
+        .click(selectors.trashCan)
         .pause(1000)
         .click(selectors.deleteDeck)
         .pause(1000)
         .click(selectors.yesButton)
-        .pause(15000)
+        .pause(500)
             //Must wait so the alert will pop up.
         .acceptAlert()
-        .pause(1000)
+        .pause(500)
+        .refresh()
+        .pause(500)
         .useCss()
         .click(selectors.backArrow)
         .waitForElementVisible(selectors.contactUs, 5000)
+        .pause(5000)
 
 }
 
@@ -238,9 +243,11 @@ const settings = (browser, userData) => {
         .waitForElementVisible(selectors.backButton, 5000)
         .click(selectors.backButton)
         .pause(1000)
+        .useXpath()
         .click(selectors.privacyPolicy)
-        .waitForElementVisible(selectors.backButton, 5000)
-        .click(selectors.backButton)
+        .useCss()
+        .waitForElementVisible(selectors.backArrow, 5000)
+        .click(selectors.backArrow)
 
 }
 
@@ -249,7 +256,6 @@ const deletingAccount = (browser) => {
     browser
      //.waitForElementVisible(selectors.settings, 2000)
     // .click(selectors.settings)
-        .useCss()
         .waitForElementVisible(selectors.delete, 5000)
         .click(selectors.delete)
         .click(selectors.authenticate)

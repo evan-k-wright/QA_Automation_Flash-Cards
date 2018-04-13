@@ -46,7 +46,7 @@ module.exports = {
         functions.settings(browser, userData)
     },
 
-    'Deleting Account': browser => {
-        functions.deleteingAccount(browser)
-    },
+    // 'Deleting Account': browser => {
+    //     functions.deleteingAccount(browser)
+    // },
 }
