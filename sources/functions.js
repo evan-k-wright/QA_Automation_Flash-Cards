@@ -191,7 +191,7 @@ const deletingDeckCard = (browser) => {
         .acceptAlert()
         .pause(500)
         .refresh()
-        .pause(500)
+        .pause(1000)
         .useCss()
         .click(selectors.backArrow)
         .waitForElementVisible(selectors.contactUs, 5000)
