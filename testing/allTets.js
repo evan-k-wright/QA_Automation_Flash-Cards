@@ -7,7 +7,7 @@ module.exports = {
         browser.url('https://cards-beta.devclock.com/login')
     },
     after: browser => {
-        browser
+        browser.end()
     },
 
     'Login': browser => {
