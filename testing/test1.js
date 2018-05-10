@@ -9,7 +9,7 @@
 //     after: browser => {
 //         browser
 //     },
-// //   'EP-64 Creating An Account': browser => {
+//    'EP-64 Creating An Account': browser => {
 //         browser
 //             .waitForElementPresent('body', 3000)
 //             .assert.containsText('label[data-bind="text: strings.signUpTab"]', "SIGN UP")
@@ -26,16 +26,16 @@
 //             .click('button[class="primary"]')
 //             .pause(3000)
 //   },
-    // 'EP-70 Creating An Account with Google': browser => {
-    //     browser
-    //         functions.googleAdd(browser, userData)
+//     'EP-70 Creating An Account with Google': browser => {
+//         browser
+//             functions.googleAdd(browser, userData)
 
-    // },
-    // 'EP-65 Logging In And Out': browser => {
-    //     functions.loginLogout(browser, userData)
-    // },
+//     },
+//     'EP-65 Logging In And Out': browser => {
+//         functions.loginLogout(browser, userData)
+//     },
 
-    // 'EP-71 Login and Logout With Google Account': browser => {
-    //     functions.loginLogoutGoogle(browser, userData)
-    // },
-//}
+//     'EP-71 Login and Logout With Google Account': browser => {
+//         functions.loginLogoutGoogle(browser, userData)
+//     },
+// }
